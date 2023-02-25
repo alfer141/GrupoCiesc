@@ -1,0 +1,68 @@
+{% extends 'partials/layout' %}
+{% block title %}{{ entry.title }}| {{ siteName }}{% endblock %}
+{% block metas %}
+
+    <meta content="{{ entry.title }} | {{ siteName }}" property="og:title"/>
+    <meta content="" name="description">
+    <meta content="" property="og:description">
+    <meta property="og:image" content="/images/og-image.png">
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+{% endblock %}
+
+{% block content %}
+    {% include 'partials/nav' %}
+    {% set cover = entry.cover.one() %}
+    
+    <main class="service-detail-main pv5 flex items-center relative" style="background-image: url({{cover.url}});">
+        <div class="service-mask h-100 w-100 absolute"></div>
+        <div class="mwc center ph3  z-999 tc">
+            <h1 class="white f2">{{ entry.title }}</h1>
+            <div class="breadcrumb-service w-100">
+                <ul class="pl0 list">
+                    <li class="dib ph3"><a class="white no-underline" href="{{url('/')}}">Inicio <i class="fal fa-angle-right"></i></a></li>
+                    <li class="dib ph3"><a class="white no-underline" href="{{url('servicios')}}">Servicios <i class="fal fa-angle-right"></i></a></li>
+                    <li class="dib ph3"><a class="prim-color">{{ entry.title }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <section class="pv5-ns pv3">
+        <div class="mwc ph3 center">
+            <div class="flex flex-wrap">
+
+                <div class="w-70-ns w-100 service-body">
+                    <div class="ph4-ns ph0">
+                        {{entry.servDescription	}}
+                    </div>
+                </div>
+
+                {% set otherServices = craft.entries()
+                    .section('services')
+                    .id('not ' ~ entry.id)
+                    .all() %}
+                <div class="w-30-ns w-100">
+                    <h3 class="navy">Otros servicios</h3>
+                    <ul class="list pl0">
+                        {% for service in otherServices %}
+                        <li class="pv3 bb b--black-10"><a class="no-underline navy dim" href="{{ service.url }}">{{ service.title }} <i class="fal fa-angle-right prim-color"></i></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" pv5">
+        <div class="mwc center ph3 contact-banner pv5 tc">
+            <h2 class="white f1 pv1 mv0">Mejora hoy tus finanzas</h2>
+            <p class="white w-70-ns w-100 center f4 mv0 pt1 pb3">Contacta con nuestro equipo. Somos tu apoyo fiscal y contable</p>
+            <a class="bg-navy white no-underline inline-flex br2 ph4 pv3 mt3 grow" href="{{ url('contacto')}}">Contáctanos</a>
+
+        </div>
+    </section>
+
+
+    {% include 'partials/footer'%}
+{% endblock %}

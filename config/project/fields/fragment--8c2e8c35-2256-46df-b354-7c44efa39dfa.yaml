@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 16777690-1a83-4a23-aaf2-5138b7d2617e
+handle: fragment
+instructions: ''
+name: 'Fragmento del post'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

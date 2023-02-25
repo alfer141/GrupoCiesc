@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: customers
+name: Clientes
+propagationMethod: all
+siteSettings:
+  7ea02965-8095-44b1-81ce-0282a9387fe3:
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'clientes/{slug}'
+structure:
+  maxLevels: null
+  uid: a6c081e6-933e-42e6-94c7-ca1b8776fb27
+type: structure

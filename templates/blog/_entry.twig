@@ -1,0 +1,74 @@
+{% extends 'partials/layout' %}
+{% block title %}{{ entry.title }} | {{ siteName }}{% endblock %}
+{% set img = entry.thumbImg.one() %}
+{% block metas %}
+    <link rel="canonical" href="{{ entry.url }}"/>
+    <meta content="{{ entry.title }} | {{ siteName }}" property="og:title"/>
+    <meta content="{{ entry.metaDescription }}" name="description">
+    <meta property="og:image" content="{{ img.url }}">
+    <meta property="og:type" content="article" />
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+{% endblock %}
+
+{% block content %}
+
+{% include 'partials/nav' %}
+    <main class="pv3">
+        <div class="mw7 center ph3">
+            <div><a class="prim-color no-underline dim" href="{{url('blog')}}"><i class="fal fa-arrow-left"></i> Regresar</a></div>
+            <h1 class="tc fw8 f1 lh-title navy ">{{ entry.title }}</h1>
+
+            <div class="flex flex-wrap justify-between pb5">
+                <div>Publicado en: <span class="prim-color">{{ entry.postDate | date("M d, Y") }}</span> </div>
+                <div>
+                    Escrito por: <span class="b prim-color">{{ entry.author }}</span>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                
+                <div>
+                    <h5 class="fw5 f6 black-60">Comparte en tus redes</h5>
+                    <ul class="list pl0">
+                        <li class="dib"><a class="no-underline black-50 pa2 f6 br2 ba b--black-10 dim" href="{{ craft.simpleSharing.link(entry.url, 'facebook') }}" target="_blank"><i class="fab fa-facebook-square fb-color"></i> Comparitr</a></li>
+                        <li class="dib"><a class="no-underline black-50 pa2 f6 br2 ba b--black-10 dim" href="{{ craft.simpleSharing.link(entry.url, 'twitter') }}" target="_blank"><i class="fab fa-twitter tw-color"></i> Tuitear</a></li>
+                        <li class="dib"><a class="no-underline black-50 pa2 f6 br2 ba b--black-10 dim" href="{{ craft.simpleSharing.link(entry.url, 'linkedin') }}" target="_blank"><i class="fab fa-linkedin-in ld-color"></i> Compartir</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="pv4 br2" src="{{ img.url }}" alt="{{ img.title }}" />
+        </div>
+    </main>
+    
+    <section class="post-body mw7 center ph3">
+        <hr>
+        <article class="lh-loose tj mt3">{{ entry.body }}</article>
+    </section>
+
+    <section class="pb4 pt3">
+        <div class="mw7 center ph3">
+           
+            {% set params = craft.entries.section('blog').orderBy('dateCreated desc') %}
+
+            {% set nextEntry = entry.getNext(params) %}
+            {% set nextImg = nextEntry.thumbImg[0] ?? false %}
+
+            <h3 class="f2 navy fw8 lh-title">Siguiente artículo <i class="fal fa-arrow-right"></i></h3>
+            <hr>
+            <a class="mv6 no-underline  black-60" href="{{ nextEntry.url }}">
+                <article>
+                    <img src="{{ nextImg.url }}" alt="" />
+                    <h1>{{ nextEntry.title }}</h1>
+                    <p>Escrito por: <span class="prim-color b">{{ nextEntry.author }}</span></p>
+                    <p class="tj lh-copy">{{ nextEntry.fragment }}</p>
+                    <div class="prim-btn ph2 pv3 br2 dib"> Leer más</div>
+                </article>
+            </a>
+            {% if nextEntry %}
+            {% endif %}
+        </div>
+    </section>
+
+{% include 'partials/footer' %}
+
+{% endblock %}

@@ -1,0 +1,31 @@
+contentColumnType: string
+fieldGroup: 366fe78c-c06c-49b9-b5a6-cb88a0d35c0e
+handle: logo
+instructions: 'Añade el logotipo de tu cliente'
+name: Logotipo
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:964c97bb-a9cc-4e56-9fea-cf94cd23bd3f' # Imágenes públicas
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:964c97bb-a9cc-4e56-9fea-cf94cd23bd3f' # Imágenes públicas
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

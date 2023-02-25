@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 366fe78c-c06c-49b9-b5a6-cb88a0d35c0e
+handle: companyLink
+instructions: ''
+name: 'Link de la empresa'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

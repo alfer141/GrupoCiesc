@@ -1,0 +1,35 @@
+dateModified: 1660761975
+email:
+  fromEmail: hola@draw.mx
+  fromName: 'Grupo Ciesc'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    964c97bb-a9cc-4e56-9fea-cf94cd23bd3f: 'Imágenes públicas' # Imágenes públicas
+    d62075cc-d1e9-4912-a09e-41e798c6466b: 'Datos de la empresa' # Datos de la empresa
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  simple-sharing:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Grupo Ciesc'
+  retryDuration: null
+  schemaVersion: 3.7.8
+  timeZone: America/Mexico_City
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

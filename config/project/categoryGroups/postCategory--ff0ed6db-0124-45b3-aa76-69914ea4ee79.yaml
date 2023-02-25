@@ -1,0 +1,40 @@
+fieldLayouts:
+  5e442377-9df6-4774-bf21-f804f0be048b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Contenido
+        sortOrder: 1
+handle: postCategory
+name: 'Categoría del articulo'
+siteSettings:
+  7ea02965-8095-44b1-81ce-0282a9387fe3:
+    hasUrls: true
+    template: blog/_category
+    uriFormat: 'categoria/{slug}'
+structure:
+  maxLevels: null
+  uid: f8677c26-b2e9-4b87-be92-bb9bc2a45147

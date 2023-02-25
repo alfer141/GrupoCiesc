@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 16777690-1a83-4a23-aaf2-5138b7d2617e
+handle: author
+instructions: ''
+name: Autor
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

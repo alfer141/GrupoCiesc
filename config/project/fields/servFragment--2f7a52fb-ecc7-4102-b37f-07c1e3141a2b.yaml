@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: c44e1865-5d0a-429d-be51-84af5e860f1a
+handle: servFragment
+instructions: 'Es una descripción corta que se mostrará  en la lista de servicios'
+name: 'Fragmento del servicio'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

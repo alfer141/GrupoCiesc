@@ -1,0 +1,118 @@
+{#<footer>
+    <div id="footer" style="background-image: url(/images/cover_bg_f.jpg);">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-4">
+                <h3>¡Reserva una cita hoy!</h3>
+                <a href="{{url('contacto')}}" class="btn btn-primary btn-lg">Contáctanos</a>
+                <br>
+                <br>
+                <br>
+                <h3>Correos:</h3>
+                <address><a href="mailto:{{ companyInfo.email }}" target="_blank" style="color: #fff;">{{ companyInfo.email }}</a></address>
+                
+             </div>
+             <!--/.col-md-3-->
+             <div class="col-md-4">
+                <h3>Empresa</h3>
+                <div>
+                   <ul id="fh5co-primary-menu">
+                      <p style="font-size:16px"><a href="{{url('nosotros')}}"><i class="icon-arrow-bold-right"></i> Sobre Nosotros</a></p>
+                      <p style="font-size:16px"><a href="{{url('servicios')}}"><i class="icon-arrow-bold-right"></i> Nuestros Servicios</a></p>
+                      <p style="font-size:16px"><a href="{{ url('privacidad') }}"><i class="icon-arrow-bold-right"></i> Política de Privacidad</a></p>
+                   </ul>
+                </div>
+             </div>
+             <!--/.col-md-3-->
+             <div class="col-md-4">
+                <h3>Dirección Sucursal Pachuca</h3>
+                <address>
+                   {{ companyInfo.pachucaAddress }}<br>
+                   <abbr title="Teléfono"><i class="icon-old-phone"></i></abbr> <a style="color: #fff;" href="tel:{{ companyInfo.pachucaPhone }}">{{ companyInfo.pachucaPhone }}</a><br>
+                </address>
+                <h3>Dirección Sucursal Tizayuca</h3>
+                <address>
+                  {{ companyInfo.tizayucaAddress }}<br>
+                   <abbr title="Teléfono"><i class="icon-old-phone"></i></abbr> <a style="color: #fff;" href="tel:{{ companyInfo.tizayucaPhone }}">{{ companyInfo.tizayucaPhone }}</a><br>
+                </address>
+             </div>
+             <!--/.col-md-3-->
+          </div>
+       </div>
+       <br>
+       <div class="container">
+          <div class="row">
+             <div class="col-md-6 col-md-offset-3 text-center">
+                <h3>Nuestras Redes</h3>
+                <p class="fh5co-social-icons">
+                   <!--<a href="#"><i class="icon-twitter2"></i></a>
+                      <a href="#"><i class="icon-dribbble2"></i></a>
+                      <a href="#"><i class="icon-youtube"></i></a>-->
+                   <a href="{{ companyInfo.facebook }}" target="_blank"><i class="icon-facebook2"></i></a>
+                   <a href="{{ companyInfo.linkedin }}" target="_blank"><i class="icon-linkedin2"></i></a>
+                   <!--<a href="#"><i class="icon-instagram"></i></a>-->
+                </p>
+                <br>
+                <hr>
+                <p>Copyright 2020 Grupo<a href="#"> CIESC</a>. Todos los Derechos Reservados </p>
+             </div>
+          </div>
+       </div>
+    </div>
+</footer>#}
+
+<footer class="pv5-ns pv3">
+   <div class="mwc center ph3">
+       <div class="flex flex-wrap">
+           <div class="w-third-ns w-100">
+               <div>
+                   <div class="mb3">
+                       <h3 class="f3 fw5 white-60">Reserva una Cita</h3>
+                       <a class="mt3 inline-flex special-btn pv3 ph3 br2" href="{{url('contacto')}}">Contáctanos</a>
+                   </div>
+                   <div class="mv3">
+                       <h3 class="f3 fw5 white-60">Correos</h3>
+                       <a class="no-underline white f5" href="mailto:{{ companyInfo.email }}"><i class="fas fa-envelope"></i> {{ companyInfo.email }}</a>
+                   </div>
+               </div>
+           </div>
+           <div class="w-third-ns w-100">
+               <div>
+                   <h3 class="f3 fw5 white-60">Empresa</h3>
+                   <ul class="list pl0">
+                       <li><a class="white-60 no-underline" href="{{url('nosotros')}}">Sobre nosotros <i class="fal fa-angle-right"></i></a></li>
+                       <li class="pv2"><a class="white-60 no-underline hover-white" href="{{url('servicios')}}">Servicios <i class="fal fa-angle-right"></i></a></li>
+                       <li class="pv2"><a class="white-60 no-underline hover-white" href="{{url('blog')}}">Blog <i class="fal fa-angle-right"></i></a></li>
+                       <li class="pv2"><a class="white-60 no-underline hover-white" href="{{url('contacto')}}">Contacto <i class="fal fa-angle-right"></i></a></li>
+                       <li class="pv2"><a class="white-60 no-underline hover-white" href="{{url('privacidad')}}">Política de privacidad <i class="fal fa-angle-right"></i></a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="w-third-ns w-100">
+               <div>
+                   <div class="pb4">
+                       <h3 class="f3 fw5 white-60">Sucursal Pachuca</h3>
+                       <p class="lh-copy f6">{{ companyInfo.pachucaAddress }}</p>
+                       <a href="tel: {{ companyInfo.pachucaPhone }}" class="white no-underline inline-flex"> <i class="fas fa-phone-rotary"></i>  {{ companyInfo.pachucaPhone }}</a>
+                   </div>
+                   <div>
+                       <a class="f3 fw5 white-60">Sucursal Tizayuca</h3>
+                       <p class="lh-copy f6">{{ companyInfo.tizayucaAddress }}</p>
+                       <a  href="tel:{{ companyInfo.tizayucaPhone }}" class="white no-underline inline-flex"> <i class="fas fa-phone-rotary"></i>  {{ companyInfo.tizayucaPhone }}</a>
+                   </div>
+                  
+               </div>
+           </div>
+       </div>
+       <div class="social-footer">
+           <h3 class="f3 fw5 white-60 tc">Nuestras Redes</h3>
+           <div class="flex justify-center">
+               <div class="ph3"><a class="white-60 hover-white f2" href="{{ companyInfo.facebook }}"><i class="fab fa-facebook-square"></i></a></div>
+               <div class="ph3"><a class="white-60 hover-white f2"  href="{{ companyInfo.linkedin }}"><i class="fab fa-linkedin"></i></a></div>
+           </div>
+       </div>
+       <div class="copyright tc">
+           <p>Copyright 2020 Grupo CIESC. Todos los Derechos Reservados</p>
+       </div>
+   </div>
+</footer>

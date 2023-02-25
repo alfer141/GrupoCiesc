@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: es-MX
+name: 'Grupo Ciesc'
+primary: true
+siteGroup: e89be7fb-054e-4159-a360-c0c9faa4efbe
+sortOrder: 1

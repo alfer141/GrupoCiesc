@@ -1,0 +1,150 @@
+{% extends 'partials/layout' %}
+{% block title %}Consultoría empresarial y fiscal | {{ siteName }}{% endblock %}
+
+{% block metas %}
+    <link rel="canonical" href="{{siteUrl}}"/>
+    <meta content="Consultoría empresarial y fiscal | {{ siteName }}" property="og:title"/>
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" name="description">
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" property="og:description">
+    <meta property="og:image" content="/images/og-image.png">
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+{% endblock %}
+
+{% block content %}
+
+    {% include 'partials/nav' %}
+
+    <main class="home-hero white pv5-ns">
+        <div class="mwc ph3 center tc pv3">
+            <img class="w-10-ns center" src="/images/ciesc-icon.svg" alt="Grupo Ciesc Pachuca Logo" />
+            <h1 class="f1 fw5">Grupo Ciesc ®</h1>
+            <div>
+                <h2 class="white-70 f4 fw5">Somos Tu apoyo físcal y contable</h2>
+                <h3 class="ttu tracked f2 fw5 mv0 pv1 white">Firma de especialistas</h3>
+            </div>
+            <a class="special-btn inline-flex pv3 ph4 br3 mt3 f4" href="{{url('contacto')}}">¡Contáctanos!</a>
+        </div>
+    </main>
+
+    <section class="h-features pv4-ns">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap">
+                <div class="w-third-ns w-100">
+                    <div class="w-90-ns center flex flex-wrap items-center">
+                        <div class="w-20">
+                            <img class="w-80 center" src="/images/finance-icon.svg" alt="Proceso financiero">
+                        </div>
+                        <div class="w-80">
+                            <h2 class="mv0 pv2 f5 ttu">Proceso financiero</h2>
+                            <p class="mv0 lh-copy fw5 f6">Conoce nuestro Proceso Financiero, te sorprenderás.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-third-ns w-100">
+                    <div class="w-90-ns center flex flex-wrap items-center">
+                        <div class="w-20">
+                            <img class="w-80 center" src="/images/strategy.svg" alt="Proceso financiero">
+                        </div>
+                        <div class="w-80">
+                            <h2 class="mv0 pv2 f5 ttu">Estrategia a la medida</h2>
+                            <p class="mv0 lh-copy fw5 f6">Garantiza un resultado a corto y largo plazo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-third-ns w-100">
+                    <div class="w-90-ns center flex flex-wrap items-center">
+                        <div class="w-20">
+                            <img class="w-80 center" src="/images/re-strategy.svg" alt="Proceso financiero">
+                        </div>
+                        <div class="w-80">
+                            <h2 class="mv0 pv2 f5 ttu">Revisamos la estrategia</h2>
+                            <p class="mv0 lh-copy fw5 f6">Definimos los puntos, ponemos en marcha el plan y comenzamos las mejoras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-services pv5-ns pv3">
+        <div class="mwc center ph3">
+
+            <div class="tc">
+                <h2 class="fw5 black-60 f2 mb0 pb2">Portafolio de servicios</h2>
+                <p class="lh-copy f5 fw5 mt0 pt1">Tus finanzas mejor organizadas que nunca</p>
+            </div>
+
+            <div class="flex flex-wrap pv5">
+                {% set services = craft.entries()
+                    .section('services')
+                    .with(['icon'])
+                    .all() %}
+                    {% for service in services %}
+                    {% set icon = service.icon[0] ?? null %}
+
+                <div class="w-third-ns w-100 pv5 pv2-ns mb4">
+                    <a class="no-underline " target="_blank" href="{{ service.url }}">
+                        <div class="relative bg-white w-90 center br3 grow h-card-s-wrapper">
+                            <div class="flex flex-wrap items-center h-service-card pv3 ph4 ">
+                                <div class="w-60 tl">
+                                    <h2 class="f5 fw5 black-60 s-title">{{ service.title }}</h2>
+                                </div>
+                                <div class="w-40 relative z-999 tr">
+                                    <img class="w-50 tr" src="{{ icon.url }}" alt="{{ service.title}}" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+                    {% endfor %}               
+            </div>
+
+            <div class="cta tc">
+                <a class="prim-btn ph2 pv3 br2" href="{{url('servicios')}}">Conoce todos los servicios</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="h-social pv5-ns pv3 bg-near-white">
+        <div class="mwc center ph3">
+            <div class="tc">
+                <h2 class="fw5 black-60 f2 mb0 pb2">Síguenos en:</h2>
+
+            </div>
+            <div class="icons flex flex-wrap justify-center tc">
+                <div class="ph4"><a class="f-subheadline no-underline fb-color dim" target="_blank" href="{{ companyInfo.facebook }}"><i class="fab fa-facebook-square"></i></a></div>
+                <div class="ph4"><a class="f-subheadline no-underline ld-color dim" target="_blank" href="{{ companyInfo.linkedin }}"><i class="fab fa-linkedin"></i></a></div>
+            </div>
+        </div>
+    </section>
+
+    {% set customers = craft.entries()
+        .section('customers')
+        .with(['logo'])
+        .all()
+        %}
+    <section class="h-customer pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="tc w-60-ns center w-100">
+                <h2 class="fw5 black-60 f2 mb0 pb2">Nuestros clientes</h2>
+                <p class="lh-copy f5 fw5 mt0 pt1">Conoce a quienes forman parte de nuestra red de servicios y orgullosamente están satisfechos con nuestro trabajo.
+                </p>
+            </div>
+            <div class="flex flex-wrap  pv4">
+                {% for customer in customers %}
+                {% set image = customer.logo[0] ?? null %}
+
+                <div class="w-25-ns w-50 pa3 mv3">
+                    <img class="w-70 center" src="{{ image.url({ format: 'webp', }) }}" alt="{{ customer.title }}" />
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer' %}
+
+{% endblock %}

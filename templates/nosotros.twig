@@ -1,0 +1,111 @@
+{% extends 'partials/layout' %}
+{% block title %}Acerca de nosotros | {{ siteName }}{% endblock %}
+{% block metas %}
+    
+    <meta content="Acerca de nosotros  | {{ siteName }}" property="og:title"/>
+    <meta content="Somos Grupo Ciesc un equipo de especialistas en materia fiscal y contable. Somos una firma avalada y certificada por el Colegio de contadores Público en México.  " name="description">
+    <meta content="Somos Grupo Ciesc un equipo de especialistas en materia fiscal y contable. Somos una firma avalada y certificada por el Colegio de contadores Público en México.  " property="og:description">
+    <meta property="og:image" content="/images/og-image.png">
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+{% endblock %}
+
+{% block content %}
+    {% include 'partials/nav' %}
+
+    <main class="about-us-hero flex items-center">
+        <div class="mwc center ph3 tc">
+            <h1 class="ttu fw5 white">Sobre <span class="b">Nosotros</span></h1>
+            <p class="f3 fw5 white">Conoce nuestro talentoso y experimentado equipo.</p>
+            <h3 class="white-60">Contacta a nuestros asesores</h3>
+            <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="">Contáctanos</a>
+        </div>
+
+    </main>
+
+    <section class="welcome pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap-ns flex-wrap-reverse">
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <img src="/images/equipo.png" alt="Equipo CIESC Pachuca" style="border-radius: 2%; box-shadow: 2px 2px 5px #999999;" />
+                </div>
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <h2 class="f2 fw5 black-60">Bienvenido a Grupo Ciesc</h2>
+                    <hr>
+                    <p class="lh-loose">Somos una firma de especialistas enfocados a soluciones fiscal financieras y talento humano, nuestro portafolio de servicios brinda asesoría empresarial, auditoría de impuestos, Prevención de Lavado de Dinero (PLD), gestión del talento humano y auditoría gubernamental teniendo presencia internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-near-white pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="tc w-60-ns center w-100">
+                <h2 class="fw5 black-60 f2 mb4 pb2">Nuestra historia</h2>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <p class="lh-loose f6 tj">
+                        Grupo Ciesc es fundada en el año de 2008 como un despacho contable en Tizayuca Hgo. dando de primer inicio servicios de consultoría y contabilidad en general.</p>
+                    <p class="lh-loose f6 tj">
+                        Conforme el tiempo y su apetito por actualizarse a las necesidades de demanda se especializa en materia de auditoría y consultoría fiscal, para integrar un servicio más enfocado a personas físicas y morales para su contabilidad y auditoría interna.</p>
+                    <p class="lh-loose f6 tj">
+                        Posteriormente se logra la certificación en el Colegio de Contadores Público de México para efectos de dictaminación y materia fiscal.</p>
+                    <p class="lh-loose f6 tj">
+                        Su alcance en el mercado logró posicionarse con empresas nacionales y transnacionales como España, Argentina, Colombia, Chile y Uruguay.</p>
+                    <p class="lh-loose f6 tj">
+                        Para el año de 2014 con su impacto en el mercado logra consolidar una alianza con Cloveski Kapital anexando un servicio de outsourcing y asesoría de capital humano.</p>
+                    <p class="lh-loose f6 tj">En la actualidad se realiza un complemento de servicios más amplio en asesoría empresarial, auditoría de impuestos, impuestos corporativos, Prevención de Lavado de Dinero (PLD), gestión de talento humano y auditoría gubernamental.</p>
+                </div>
+                <div class="w-50-ns w-100"> 
+                    <img src="/images/historia.png" alt=" Historia Grupo Ciesc" style="border-radius: 2%; box-shadow: 2px 2px 5px #999999;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <h2 class="f2 fw5 black-60">Misión</h2>
+                    <hr>
+                    <p class="lh-loose tj f5">Brindar servicios profesionales contables, de auditoría, asesoría fiscal y de la gestión del talento humano, sustentados en la mayor ética y calidad técnica requerida, logrando la satisfacción total de nuestros clientes mediante nuestro compromiso, servicios y experiencia.
+
+                    </p>
+                </div>
+
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <h2 class="f2 fw5 black-60">Visión</h2>
+                    <hr>
+                    <p class="lh-loose tj f5">Llegar a consolidar nuestra organización para ser considerada como la mayor y mejor firma mexicana de contadores, asesores fiscales y administradores de talento humano con representación internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values pv5-ns pv3 bg-near-white">
+        <div class="mwc ph3 center">
+            <div class="tc w-60-ns center w-100">
+                <h2 class="fw5 black-60 f2 mb0 pb2">Nuestros Valores</h2>
+                <p class="lh-copy f5 fw5 mt0 pt1">Conoce nuestros valores y nuestra filosofía.</p>
+            </div>
+
+            <img src="/images/valores.png" alt="Valores y filosofía CIESC Méxio" />
+        </div>
+    </section>
+
+    <section class="pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="tc w-60-ns center w-100">
+                <h2 class="fw5 black-60 f2 mb0 pb2">Nuestra filosofía fundamental</h2>
+                <hr>
+                <h3 class="black-50 ttu tracked f6">Calidad en el servicio</h3>
+                <p class="lh-loose tc">Estamos comprometidos al cien por ciento a brindarles a nuestros clientes el servicio y la calidad necesaria para así lograr ser más eficientes en nuestra labor. Ofreciéndoles una alta calidad de nuestros servicios brindados.</p>
+            </div>
+
+        </div>
+    </section>
+
+    {% include 'partials/footer' %}
+{% endblock %}
