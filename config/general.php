@@ -20,7 +20,7 @@ return [
         'omitScriptNameInUrls' => true,
 
         // Control panel trigger word
-        'cpTrigger' => 'admin',
+        'cpTrigger' => 'dzh2i3vkj',
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => App::env('SECURITY_KEY'),
