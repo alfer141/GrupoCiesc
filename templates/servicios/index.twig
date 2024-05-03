@@ -32,32 +32,31 @@
         </div>
     </section>
 
-    <div class="services-grid">
-        {% set services = craft.entries()
-            .section('services')
-            .with(['serviceImg']) 
-            .all() %}
-        {% for service in services %}
-        {% set image = service.serviceImg[0] ?? null %}    
-        <section class=" pv5-ns pv3">
-           
-            <div class="mwc center ph3 ">
-                <div class="flex flex-wrap serv-sect">
-                    <div class="w-50-ns w-100 ph4-ns ph0">
-                        <div></div>
-                        <h2 class="black-50 f2 fw5">{{ service.title }}</h2>
-                        <p class="lh-loose f5 fw5">{{service.servFragment }}
-                        </p>
-                        <a class="inline-flex prim-color no-underline" target="_blank" href="{{ service.url }}">Más Información <i class="ml2 fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="w-50-ns w-100 ph4-ns ph0">
-                        <img src="{{ image.url }}" alt="{{ service.title }}" />
-                    </div>
+   <div class="services-grid">
+    {% set services = craft.entries()
+        .section('services')
+        .with(['serviceImg']) 
+        .all() %}
+    {% for service in services %}
+    {% set image = service.serviceImg[0] ?? null %}    
+    <section class="pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap serv-sect {% if loop.index is even %}flex-row-reverse{% endif %}">
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <div></div>
+                    <h2 class="black-50 f2 fw5">{{ service.title }}</h2>
+                    <p class="lh-loose f5 fw5">{{ service.servFragment }}</p>
+                    <a class="inline-flex prim-color no-underline" target="_blank" href="{{ service.url }}">Más Información <i class="ml2 fas fa-arrow-right"></i></a>
+                </div>
+                <div class="w-50-ns w-100 ph4-ns ph0">
+                    <img src="{{ image.url }}" alt="{{ service.title }}" />
                 </div>
             </div>
-        </section>
-        <hr>
-        {% endfor %}
-    </div>
+        </div>
+    </section>
+    <hr>
+    {% endfor %}
+</div>
+
     {% include 'partials/footer' %}
 {% endblock %}

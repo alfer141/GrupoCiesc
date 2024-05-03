@@ -28,7 +28,18 @@
             <div class="">
                 <ul class="list pl0 dib-ns dn">
                     <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('') }}" href="{{url('/')}}">Inicio</a></li>
-                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('servicios') }}" href="{{url('servicios')}}">Portafolio de Servicios</a></li>
+                    <li class="dib pl4 relative" x-data="{ dropdownServices: false }">
+                        <a @click="dropdownServices = !dropdownServices" class="white nav-link f6 pointer {{ macros.is_active('servicios') }}">
+                        Portafolio de Servicios <i class="fa-sharp fa-regular fa-angle-down"></i>
+                        </a>
+                        {% set services = craft.entries().section('services').all() %}
+                        <ul x-show="dropdownServices"  x-transition.duration.300ms  @click.away="dropdownServices = false"  style="width: 280px; max-width:280px;" class="list mt3 pv3 ph4 absolute bg-white br2 shadow-2">
+                            {% for service in services %}
+                            <li class="db center"><a class="no-underline mid-gray pv2 dib center w-auto dim" href=""> {{ service.title }} </a></li>
+                            {% endfor %}
+                            <li><a class="prim-color no-underline fw6 pv2 dib center w-auto dim" href="{{url('servicios')}}"><i class="fa-duotone fa-grid"></i> Ver todos</a></li>
+                        </ul>
+                    </li>
                     <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('nosotros') }}" href="{{url('nosotros')}}">Nosotros</a></li>
                     <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('blog') }}" href="{{url('blog')}}">Blog</a></li>
                     <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('contacto') }}" href="{{url('contacto')}}">Contacto</a></li>
@@ -42,7 +53,7 @@
                         <!-- Overlay content -->
                         <div class="overlay-content">
                             <a class="{{ macros.is_active('') }} white" href="{{url('/')}}">Inicio</a>
-                            <a class="{{ macros.is_active('servicios') }}" href="{{url('servicios')}}">Servicios</a>
+                            <a class="{{ macros.is_active('servicios') }}" href="{{url('servicios')}}">Servicios </a>
                             <a class="{{ macros.is_active('nosotros') }}" href="{{url('nosotros')}}">Nosotros</a>
                             <a class="{{ macros.is_active('blog') }}" href="{{url('blog')}}">Blog</a>
                             <a class="{{ macros.is_active('contacto') }}" href="{{url('contacto')}}">Contacto</a>
