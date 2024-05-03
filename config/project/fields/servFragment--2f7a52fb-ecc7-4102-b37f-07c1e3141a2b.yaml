@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: c44e1865-5d0a-429d-be51-84af5e860f1a
 handle: servFragment
@@ -11,7 +12,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: '1'
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

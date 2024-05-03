@@ -1,12 +1,45 @@
-dateModified: 1660761975
+dateModified: 1714752211
 email:
   fromEmail: hola@draw.mx
   fromName: 'Grupo Ciesc'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0c244101-546b-4dfe-8cd5-9f464cf6fe03: 'Meta Description'
+    1fbf6371-1871-4eb1-85a2-532ba65a9ece: 'Datos de la empresa'
+    2f7a52fb-ecc7-4102-b37f-07c1e3141a2b: 'Fragmento del servicio'
+    3b094a3b-b91d-4668-931f-44fa022c2be6: 'Imagen del artículo'
+    3c0e1e4e-7598-4723-9566-831a3692dc3e: 'Dirección Pachuca'
+    4b932bdd-e388-4934-9252-b2bd49692bd2: Logotipo
+    7d0e2044-bdde-4103-b287-befbcf056b1a: Autor
+    7ea02965-8095-44b1-81ce-0282a9387fe3: 'Grupo Ciesc'
+    8a4111a1-6f82-4333-9d2c-be2325bf6e87: 'Descripción del servicio'
+    8afed7eb-1945-4be8-9ca1-0985bbd79418: 'Cuerpo del artículo'
+    8bb59c3e-d540-4254-8f4a-c4af6c5abdb5: Linkedin
+    8c2e8c35-2256-46df-b354-7c44efa39dfa: 'Fragmento del post'
+    9e660280-513c-453a-838e-ca9453c9a215: 'Link de la empresa'
+    9f12f92b-d3c9-433e-b204-5ce21c95d573: 'Teléfono Pachuca'
+    19f32506-7666-4c44-a94d-7b717cb28596: Blog
+    24ad1f78-4194-4ad0-b646-3ea0ea9f4a1d: 'Correo electrónico'
+    43f226eb-8874-48e8-ac5f-222fbc3ca738: Facebook
+    50dadc77-662b-4c96-8999-8356ec4d4481: 'Imagen del servicio'
+    332c3322-a2f6-44b8-a66b-22cadcf0d1c1: 'Public Schema'
+    366fe78c-c06c-49b9-b5a6-cb88a0d35c0e: Clientes
     964c97bb-a9cc-4e56-9fea-cf94cd23bd3f: 'Imágenes públicas' # Imágenes públicas
+    88125bde-16f5-4673-b1a6-d1ba8f34962d: Clientes
+    867287f4-0358-4ee1-a33d-3c56fb44f327: Clientes
+    16777690-1a83-4a23-aaf2-5138b7d2617e: Blog
+    ae7929f0-e730-4538-8f63-5a6e530b541e: Servicios
+    b0568e7a-3e32-4145-82cd-67b09eacf53e: 'Teléfono Tizayuca'
+    c44e1865-5d0a-429d-be51-84af5e860f1a: Servicios
+    c6649a02-dc73-41bf-9496-2d6ffb97d502: Blog
     d62075cc-d1e9-4912-a09e-41e798c6466b: 'Datos de la empresa' # Datos de la empresa
+    e0e1d402-f807-4daa-b61d-14470180a90d: Portada
+    e52eea9d-e54c-463e-a654-1fa6e5cf25a5: Common
+    e89be7fb-054e-4159-a360-c0c9faa4efbe: 'Grupo Ciesc'
+    f8d4d697-6246-4269-bd95-429ae9eec14f: 'Icono '
+    f4832466-aec3-460d-875a-e0295b369b56: Servicios
+    ff0ed6db-0124-45b3-aa76-69914ea4ee79: 'Categoría del articulo'
 plugins:
   redactor:
     edition: standard
@@ -16,6 +49,47 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: ''
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - ' - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
   simple-sharing:
     edition: standard
     enabled: true
@@ -25,7 +99,7 @@ system:
   live: true
   name: 'Grupo Ciesc'
   retryDuration: null
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.33
   timeZone: America/Mexico_City
 users:
   allowPublicRegistration: false

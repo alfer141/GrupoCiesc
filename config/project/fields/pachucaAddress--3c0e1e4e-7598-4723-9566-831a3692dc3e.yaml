@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece
 handle: pachucaAddress
@@ -11,7 +12,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: '1'
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

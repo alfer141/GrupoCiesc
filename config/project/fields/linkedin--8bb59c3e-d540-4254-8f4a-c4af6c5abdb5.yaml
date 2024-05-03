@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string(255)
 fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece
 handle: linkedin
@@ -7,6 +8,8 @@ searchable: false
 settings:
   maxLength: '255'
   placeholder: ''
+  types:
+    - url
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Url
