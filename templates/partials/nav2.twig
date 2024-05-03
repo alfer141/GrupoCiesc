@@ -35,7 +35,7 @@
                         {% set services = craft.entries().section('services').all() %}
                         <ul x-show="dropdownServices"  x-transition.duration.300ms  @click.away="dropdownServices = false"  style="width: 280px; max-width:280px;" class="list mt3 pv3 ph4 absolute bg-white br2 shadow-2">
                             {% for service in services %}
-                            <li class="db center"><a class="no-underline mid-gray pv2 dib center w-auto dim" href=""> {{ service.title }} </a></li>
+                            <li class="db center"><a class="no-underline mid-gray pv2 dib center w-auto dim" href="{{ service.url }}"> {{ service.title }} </a></li>
                             {% endfor %}
                             <li><a class="prim-color no-underline fw6 pv2 dib center w-auto dim" href="{{url('servicios')}}"><i class="fa-duotone fa-grid"></i> Ver todos</a></li>
                         </ul>
