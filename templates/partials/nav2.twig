@@ -1,0 +1,73 @@
+{% import "_macros.twig" as macros %}
+
+
+<div class="pre-nav prim-bg f6">
+    <div class="mwc center ph3">
+        <div class="flex flex-wrap justify-between items-center">
+            <div>
+                <ul class="list pl0">
+                    <li class="dib pr3-ns"><a class="no-underline white dim" href="{{url('blog')}}">Blog</a></li>
+                    <li class="dib"><a class="no-underline white dim"  href="{{url('contacto')}}">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a class="white no-underline pr3-ns" href="{{ companyInfo.facebook }}"><i class="fab fa-facebook-square"></i></a>
+                <a class="white no-underline" href="{{ companyInfo.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<nav class="pv3 sticky bb b--white-10 z-9999">
+    <div class="mwc center ph3">
+        <div class="flex flex-wrap justify-between items-center">
+            <div>
+                <a class="no-underline ttu white fw7 f4" href="{{url('/')}}">Grupo Ciesc®</a>
+            </div>
+            <div class="">
+                <ul class="list pl0 dib-ns dn">
+                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('') }}" href="{{url('/')}}">Inicio</a></li>
+                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('servicios') }}" href="{{url('servicios')}}">Portafolio de Servicios</a></li>
+                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('nosotros') }}" href="{{url('nosotros')}}">Nosotros</a></li>
+                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('blog') }}" href="{{url('blog')}}">Blog</a></li>
+                    <li class="dib pl4"><a class="white nav-link f6 {{ macros.is_active('contacto') }}" href="{{url('contacto')}}">Contacto</a></li>
+                </ul>
+                <!-- The overlay -->
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a class="{{ macros.is_active('') }} white" href="{{url('/')}}">Inicio</a>
+                            <a class="{{ macros.is_active('servicios') }}" href="{{url('servicios')}}">Servicios</a>
+                            <a class="{{ macros.is_active('nosotros') }}" href="{{url('nosotros')}}">Nosotros</a>
+                            <a class="{{ macros.is_active('blog') }}" href="{{url('blog')}}">Blog</a>
+                            <a class="{{ macros.is_active('contacto') }}" href="{{url('contacto')}}">Contacto</a>
+                        </div>
+                    
+                    </div>
+  
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span class="db dn-ns" onclick="openNav()"><i class="far fa-bars"></i></span>
+
+               
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>

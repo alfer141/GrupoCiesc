@@ -15,14 +15,15 @@
 
 {% block content %}
 
-    {% include 'partials/nav' %}
+    
 
-    <main class="home-hero white pv5-ns">
+    <main class="home-hero white pb5-ns">
+        {% include 'partials/nav2' %}
         <div class="mwc ph3 center tc pv3">
             <img class="w-10-ns center" src="/images/ciesc-icon.svg" alt="Grupo Ciesc Pachuca Logo" />
             <h1 class="f1 fw5">Grupo Ciesc ®</h1>
             <div>
-                <h2 class="white-70 f4 fw5">Somos Tu apoyo físcal y contable</h2>
+                <h2 class="white-70 f4 fw5">Somos tu apoyo físcal y contable</h2>
                 <h3 class="ttu tracked f2 fw5 mv0 pv1 white">Firma de especialistas</h3>
             </div>
             <a class="special-btn inline-flex pv3 ph4 br3 mt3 f4" href="{{url('contacto')}}">¡Contáctanos!</a>
