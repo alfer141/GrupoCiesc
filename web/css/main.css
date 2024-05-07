@@ -164,21 +164,19 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 70vh;
+
 }
 .about-us-hero{
     background-image: url(/images/nosotros-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 70vh;
 }
 .blog-hero{
     background-image: url(/images/blog-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 70vh;
 }
 .lh-loose{
     line-height: 2;
@@ -189,7 +187,6 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 70vh;
 }
 .ciesc-input{
     background-color: #f0f8ff;
@@ -204,8 +201,7 @@ footer{
 .service-detail-main{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 50vh;  
+    background-size: cover; 
 }
 .service-mask{
     background-color: rgb(7 8 45 / 68%);

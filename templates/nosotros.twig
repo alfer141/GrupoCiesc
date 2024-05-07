@@ -11,14 +11,18 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/nav' %}
 
-    <main class="about-us-hero flex items-center">
-        <div class="mwc center ph3 tc">
-            <h1 class="ttu fw5 white">Sobre <span class="b">Nosotros</span></h1>
-            <p class="f3 fw5 white">Conoce nuestro talentoso y experimentado equipo.</p>
-            <h3 class="white-60">Contacta a nuestros asesores</h3>
-            <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="">Contáctanos</a>
+
+    <main class="about-us-hero">
+        {% include 'partials/nav' %}
+        <div class="mwc center ph3 tc flex items-center vh-50 justify-center">
+            <div>
+                <h1 class="ttu fw5 white">Sobre <span class="b">Nosotros</span></h1>
+                <p class="f3 fw5 white">Conoce nuestro talentoso y experimentado equipo.</p>
+                <h3 class="white-60">Contacta a nuestros asesores</h3>
+                <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="">Contáctanos</a>
+            </div>
+
         </div>
 
     </main>

@@ -11,12 +11,15 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/nav'%}
-    <main class="blog-hero flex items-center">
-        <div class="mwc center ph3 tc">
-            <h1 class="ttu fw5 white">Nuestro <span class="b">Blog y noticias</span></h1>
-            <p class="f3 fw5 white">Mantente al tanto de tendencias y noticias Corporativas</p>
-            <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="{{url('contacto')}}">Contáctanos</a>
+  
+    <main class="blog-hero ">
+        {% include 'partials/nav'%}
+        <div class="mwc center ph3 tc vh-50 items-center flex justify-center">
+            <div>
+                <h1 class="ttu fw5 white">Nuestro <span class="b">Blog y noticias</span></h1>
+                <p class="f3 fw5 white">Mantente al tanto de tendencias y noticias Corporativas</p>
+                <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="{{url('contacto')}}">Contáctanos</a>
+            </div>
         </div>
     </main>
 

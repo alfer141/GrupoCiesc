@@ -11,21 +11,29 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/nav' %}
+   
     {% set cover = entry.cover.one() %}
     
-    <main class="service-detail-main pv5 flex items-center relative" style="background-image: url({{cover.url}});">
-        <div class="service-mask h-100 w-100 absolute"></div>
-        <div class="mwc center ph3  z-999 tc">
-            <h1 class="white f2">{{ entry.title }}</h1>
-            <div class="breadcrumb-service w-100">
-                <ul class="pl0 list">
-                    <li class="dib ph3"><a class="white no-underline" href="{{url('/')}}">Inicio <i class="fal fa-angle-right"></i></a></li>
-                    <li class="dib ph3"><a class="white no-underline" href="{{url('servicios')}}">Servicios <i class="fal fa-angle-right"></i></a></li>
-                    <li class="dib ph3"><a class="prim-color">{{ entry.title }}</a></li>
-                </ul>
-            </div>
+    <main class="service-detail-main pb5 h-100 relative" style="background-image: url({{cover.url}});">
+        <div class="relative" style="z-index: 999999;">
+            {% include 'partials/nav' %}
         </div>
+         
+        
+        <div class="mwc center ph3  z-999 tc flex items-center vh-50 justify-center relative">
+            <div>
+                <h1 class="white f2">{{ entry.title }}</h1>
+                <div class="breadcrumb-service w-100">
+                    <ul class="pl0 list">
+                        <li class="dib ph3"><a class="white no-underline" href="{{url('/')}}">Inicio <i class="fal fa-angle-right"></i></a></li>
+                        <li class="dib ph3"><a class="white no-underline" href="{{url('servicios')}}">Servicios <i class="fal fa-angle-right"></i></a></li>
+                        <li class="dib ph3"><a class="prim-color">{{ entry.title }}</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="service-mask h-100 w-100 absolute top-0"></div>
     </main>
 
     <section class="pv5-ns pv3">

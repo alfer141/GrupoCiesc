@@ -11,13 +11,17 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/nav' %}
-    <main class="contact-hero flex items-center">
-        <div class="mwc center ph3 tc">
-            <h1 class="ttu fw5 white">Contáctanos  <span class="b">Ahora</span></h1>
-            <p class="f3 fw5 white">¿Deseas conocer nuestros servicios ?</p>
-            <a href="" class="white db pv4">Click aquí para ver servicios</a>
-            <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="tel:{{ companyInfo.pachucaPhone }}">Llamar con un asesor</a>
+    
+    <main class="contact-hero">
+        {% include 'partials/nav' %}
+        <div class="mwc center ph3 tc vh-50 flex items-center justify-center">
+            <div>
+                <h1 class="ttu fw5 white">Contáctanos  <span class="b">Ahora</span></h1>
+                <p class="f3 fw5 white">¿Deseas conocer nuestros servicios ?</p>
+                <a href="" class="white db pv4">Click aquí para ver servicios</a>
+                <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="tel:{{ companyInfo.pachucaPhone }}">Llamar con un asesor</a>
+            </div>
+
         </div>
 
     </main>
@@ -80,12 +84,13 @@
                         <a class="prim-btn ph4 pv3 br2 inline-flex" href="tel:{{ companyInfo.pachucaPhone }}">Marcar al: {{ companyInfo.pachucaPhone }}</a>
                     </div>
                 </div>
+                {#
                 <div class="w-50-ns w-100">
                     <div class="w-60-ns center tc">
                         <h2>Dirección Sucursal Tizayuca</h2>
                         <p class="lh-copy">{{ companyInfo.tizayucaAddress }}</p>
                         <a class="prim-btn ph4 pv3 br2 inline-flex" href="tel:{{ companyInfo.tizayucaPhone }}">Marcar al: {{ companyInfo.tizayucaPhone }}</a>
-                    </div>
+                    </div>#}
                 </div>
             </div>
         </div>

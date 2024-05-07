@@ -11,13 +11,20 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'partials/nav' %}
+   
 
-    <main class="services-hero flex items-center">
+    <main class="services-hero">
+         {% include 'partials/nav' %}
         <div class="mwc center ph3 tc">
-            <h1 class="ttu fw5 white">Portafolio de <span class="b">Servicios</span></h1>
-            <p class="f3 fw5 white">Conoce los servicios que ofrecemos.</p>
-            <a class="special-btn ph3 pv3 br2 inline-flex tc db center" href="{{url('contacto')}}">Contáctanos</a>
+            <div class="vh-50 flex items-center justify-center">
+                <div>
+                    <h1 class="ttu fw5 white">Portafolio de <span class="b">Servicios</span></h1>
+                    <p class="f3 fw5 white">Conoce los servicios que ofrecemos.</p>
+                    <a class="special-btn ph3 pv3 br2 inline-flex tc db center " href="{{url('contacto')}}">Contáctanos</a>
+                </div>
+
+            </div>
+
         </div>
     </main>
     
