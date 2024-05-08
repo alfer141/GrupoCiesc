@@ -111,6 +111,41 @@
         </div>
     </section>
 
+    <section class="ciesc-bg-blue pv5-ns">
+        <div class="mwc center ph3">
+            <div class="w-60-ns w-100 center tc pb5-ns pv3">
+                <h2 class="f5 white fw4 pv0 mv0">Portafolio de servicios</h2>
+                <p class="white f1 mv0 pv0">Somos el aliado que tu empresa necesita</p>
+            </div>
+            <div class="flex flex-wrap">
+                {% set services = craft.entries().section('services').all() %}
+                {% for service in services %}
+                <div class="w-25-ns w-100">
+                    <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('/images/card_service.webp');">
+                        <div class="white">
+                            <div x-on:mouseover="showDescription = true; icon = 'fa-sharp fa-thin fa-circle-chevron-up'" 
+                                x-on:mouseout="showDescription = false; icon = 'fa-sharp fa-thin fa-circle-chevron-down'"  
+                                class="pv4 ph3 pointer" style="background-color: #3A3F47;">
+                                <div class="flex items-center">
+                                    <h3 class="white fw5 f3 w-80">{{ service.title }}</h3>
+                                    <i :class="icon + ' f2'"></i>
+                                </div>
+                                
+                                <div  x-show="showDescription" x-transition>
+                                    <p>{{ service.servFragment|truncate(200, '...') }}</p>
+                                    <a class="white" href="{{ service.url() }}">Ver detalles del servicio</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
     <section class="h-social pv5-ns pv3 bg-near-white">
         <div class="mwc center ph3">
             <div class="tc">
