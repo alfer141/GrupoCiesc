@@ -69,43 +69,46 @@
         </div>
     </section>
 
-    <section class="h-services pv5-ns pv3">
+
+    <section class="ciesc-bg-blue pv5-ns pv3">
         <div class="mwc center ph3">
-
-            <div class="tc">
-                <h2 class="fw5 black-60 f2 mb0 pb2">Portafolio de servicios</h2>
-                <p class="lh-copy f5 fw5 mt0 pt1">Tus finanzas mejor organizadas que nunca</p>
+            <div class="w-60-ns w-100 center tc pb5-ns pv3">
+                <h2 class="f5 white fw4 pv0 mv0">Portafolio de servicios</h2>
+                <p class="white f1 mv0 pv0">Somos el aliado que tu empresa necesita</p>
             </div>
-
-            <div class="flex flex-wrap pv5">
+            <div class="flex flex-wrap">
                 {% set services = craft.entries()
                     .section('services')
                     .with(['icon'])
                     .all() %}
-                    {% for service in services %}
-                    {% set icon = service.icon[0] ?? null %}
-
-                <div class="w-third-ns w-100 pv5 pv2-ns mb4">
-                    <a class="no-underline " target="_blank" href="{{ service.url }}">
-                        <div class="relative bg-white w-90 center br3 grow h-card-s-wrapper">
-                            <div class="flex flex-wrap items-center h-service-card pv3 ph4 ">
-                                <div class="w-60 tl">
-                                    <h2 class="f5 fw5 black-60 s-title">{{ service.title }}</h2>
+                {% for service in services %}
+                    {% set cover = service.icon[0] ?? null %}
+                    <div class="w-25-ns w-100">
+                        <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('{{ cover.url() }}');">
+                            <div class="white">
+                                <div x-on:mouseover="showDescription = true; icon = 'fa-sharp fa-thin fa-circle-chevron-up'" 
+                                    x-on:mouseout="showDescription = false; icon = 'fa-sharp fa-thin fa-circle-chevron-down'"  
+                                    class="pv4 ph3 pointer" style="background-color: #3A3F47;">
+                                    <div class="flex items-center">
+                                        <h3 class="white fw5 f3 w-80">{{ service.title }}</h3>
+                                        <i :class="icon + ' f2'"></i>
+                                    </div>
+                                    
+                                    <div  x-show="showDescription" x-transition>
+                                        <p>{{ service.servFragment|truncate(200, '...') }}</p>
+                                        <a class="white no-underline service_card__link relative grow" href="{{ service.url() }}">Ver detalles del servicio <i class="fa-sharp fa-light fa-arrow-up-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="w-40 relative z-999 tr">
-                                    <img class="w-50 tr" src="{{ icon.url }}" alt="{{ service.title}}" />
-                                </div>
+                                
                             </div>
+                            
                         </div>
-                    </a>
-                </div> 
-                    {% endfor %}               
+                    </div>
+                {% endfor %}
             </div>
-
-            <div class="cta tc">
+            <div class="cta tc mt4">
                 <a class="prim-btn ph2 pv3 br2" href="{{url('servicios')}}">Conoce todos los servicios</a>
             </div>
-            
         </div>
     </section>
 
