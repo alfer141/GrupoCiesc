@@ -120,8 +120,9 @@
             <div class="flex flex-wrap">
                 {% set services = craft.entries().section('services').all() %}
                 {% for service in services %}
+                {% set cover = service.icon.one() %}
                 <div class="w-25-ns w-100">
-                    <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('/images/card_service.webp');">
+                    <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('{{ cover.url() }}');">
                         <div class="white">
                             <div x-on:mouseover="showDescription = true; icon = 'fa-sharp fa-thin fa-circle-chevron-up'" 
                                 x-on:mouseout="showDescription = false; icon = 'fa-sharp fa-thin fa-circle-chevron-down'"  
@@ -133,7 +134,7 @@
                                 
                                 <div  x-show="showDescription" x-transition>
                                     <p>{{ service.servFragment|truncate(200, '...') }}</p>
-                                    <a class="white" href="{{ service.url() }}">Ver detalles del servicio</a>
+                                    <a class="white no-underline service_card__link relative grow" href="{{ service.url() }}">Ver detalles del servicio <i class="fa-sharp fa-light fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                             

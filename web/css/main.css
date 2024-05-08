@@ -29,6 +29,15 @@ footer{
 .w-95{
     width: 95%;
 }
+.service_card__link::after{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #ff5722;
+    bottom: -.5rem;
+    position: absolute;
+    left: 0;
+}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
