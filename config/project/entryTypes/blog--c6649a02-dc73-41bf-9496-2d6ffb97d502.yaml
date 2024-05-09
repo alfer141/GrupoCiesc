@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7d0e2044-bdde-4103-b287-befbcf056b1a
+            fieldUid: 7d0e2044-bdde-4103-b287-befbcf056b1a # Autor
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0c244101-546b-4dfe-8cd5-9f464cf6fe03
+            fieldUid: 0c244101-546b-4dfe-8cd5-9f464cf6fe03 # Meta Description
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3b094a3b-b91d-4668-931f-44fa022c2be6
+            fieldUid: 3b094a3b-b91d-4668-931f-44fa022c2be6 # Imagen del artículo
             instructions: null
             label: null
             required: false
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8c2e8c35-2256-46df-b354-7c44efa39dfa
+            fieldUid: 8c2e8c35-2256-46df-b354-7c44efa39dfa # Fragmento del post
             instructions: null
             label: null
             required: false
@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8afed7eb-1945-4be8-9ca1-0985bbd79418
+            fieldUid: 8afed7eb-1945-4be8-9ca1-0985bbd79418 # Cuerpo del artículo
             instructions: null
             label: null
             required: false
@@ -76,7 +76,7 @@ fieldLayouts:
 handle: blog
 hasTitleField: true
 name: Blog
-section: 19f32506-7666-4c44-a94d-7b717cb28596
+section: 19f32506-7666-4c44-a94d-7b717cb28596 # Blog
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

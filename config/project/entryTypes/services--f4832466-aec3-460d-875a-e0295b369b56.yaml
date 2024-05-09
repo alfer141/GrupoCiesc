@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f8d4d697-6246-4269-bd95-429ae9eec14f
+            fieldUid: f8d4d697-6246-4269-bd95-429ae9eec14f # Icono 
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b
+            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b # Fragmento del servicio
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e0e1d402-f807-4daa-b61d-14470180a90d
+            fieldUid: e0e1d402-f807-4daa-b61d-14470180a90d # Portada
             instructions: null
             label: null
             required: false
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 50dadc77-662b-4c96-8999-8356ec4d4481
+            fieldUid: 50dadc77-662b-4c96-8999-8356ec4d4481 # Imagen del servicio
             instructions: null
             label: null
             required: false
@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8a4111a1-6f82-4333-9d2c-be2325bf6e87
+            fieldUid: 8a4111a1-6f82-4333-9d2c-be2325bf6e87 # Descripción del servicio
             instructions: null
             label: null
             required: false
@@ -76,7 +76,7 @@ fieldLayouts:
 handle: services
 hasTitleField: true
 name: Servicios
-section: ae7929f0-e730-4538-8f63-5a6e530b541e
+section: ae7929f0-e730-4538-8f63-5a6e530b541e # Servicios
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

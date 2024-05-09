@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4b932bdd-e388-4934-9252-b2bd49692bd2
+            fieldUid: 4b932bdd-e388-4934-9252-b2bd49692bd2 # Logotipo
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9e660280-513c-453a-838e-ca9453c9a215
+            fieldUid: 9e660280-513c-453a-838e-ca9453c9a215 # Link de la empresa
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
 handle: clientes
 hasTitleField: true
 name: Clientes
-section: 88125bde-16f5-4673-b1a6-d1ba8f34962d
+section: 88125bde-16f5-4673-b1a6-d1ba8f34962d # Clientes
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

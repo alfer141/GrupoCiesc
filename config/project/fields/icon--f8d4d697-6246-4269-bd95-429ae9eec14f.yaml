@@ -1,6 +1,6 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: c44e1865-5d0a-429d-be51-84af5e860f1a
+fieldGroup: c44e1865-5d0a-429d-be51-84af5e860f1a # Servicios
 handle: icon
 instructions: 'El ícono del servicio se muestra en el home del sitio'
 name: 'Icono '

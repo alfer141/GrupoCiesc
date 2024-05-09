@@ -32,7 +32,7 @@ fieldLayouts:
 handle: postCategory
 name: 'Categoría del articulo'
 siteSettings:
-  7ea02965-8095-44b1-81ce-0282a9387fe3:
+  7ea02965-8095-44b1-81ce-0282a9387fe3: # Grupo Ciesc
     hasUrls: true
     template: blog/_category
     uriFormat: 'categoria/{slug}'
