@@ -5,7 +5,7 @@ body{
 }
 
 p{
-    color: #848484;
+    color: #696771;
 }
 hr{
     margin-top: 1rem;
@@ -19,6 +19,14 @@ footer{
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
+}
+.component_form input[type=text]{
+    background-color: #F8F8F8;
+    border-color: transparent;
+    border-radius: 4px;
+}
+.component_form label{
+    color: #292735;
 }
 .ciesc-blue{ 
     color: #111A2B;
