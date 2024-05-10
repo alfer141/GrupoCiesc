@@ -57,6 +57,11 @@
         {% block styles %}{% endblock %}
     </head>
     <body>
+        {% if companyInfo.globalWhatsapp %}
+        <a class="whatsapp_float_btn flex items-center justify-center" href="{{ companyInfo.globalWhatsapp }}" target="_blank"><i class="fa-brands fa-whatsapp f1 white"></i></a>
+        {% endif %}
+
+
 		{% block scripts %}{% endblock %}
         {% block content %}{% endblock %}
        

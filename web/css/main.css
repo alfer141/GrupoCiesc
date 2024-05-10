@@ -25,6 +25,18 @@ footer{
     border-color: transparent;
     border-radius: 4px;
 }
+.whatsapp_float_btn{
+    background-color: #25D266;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    right: 1rem;
+    top: 24%;
+    z-index: 999;
+    transition: .2s ease;
+}
 .component_form input[type=email]{
     background-color: #F8F8F8;
     border-color: transparent;
