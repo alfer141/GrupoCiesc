@@ -8,14 +8,14 @@
                         <div  class="w-50-ns w-100">
                             <h3 class="mb0 pb0 f3">Suc. Pachuca</h3>
                             <p class="mt1">{{ companyInfo.pachucaAddress  }}</p>
-                            <a class="prim-color no-underline" href="tel:7716576633">771 657 66 33</a>
+                            <a class="prim-color no-underline" href="tel:{{companyInfo.pachucaPhone }}">{{companyInfo.pachucaPhone }}</a>
                         </div>
                         {% endif %}
                         {% if companyInfo.qroAddress %}
                         <div  class="w-50-ns w-100">
                             <h3 class="mb0 pb0 f3">Suc. Querétaro</h3>
                             <p  class="mt1">{{ companyInfo.qroAddress }}</p>
-                            <a class="prim-color no-underline" href="">771 657 66 33</a>
+                            <a class="prim-color no-underline" href="tel:{{companyInfo.pachucaPhone }}" >{{ companyInfo.qrophone }}</a>
                         </div>
                         {% endif %}
                     </div>
