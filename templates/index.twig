@@ -149,6 +149,19 @@
         </div>
     </section>
 
+    <div class="brands  pv5 mt4">
+            <div class="slider flex items-center  pv4">
+                <div class="slide-track items-center">
+                {% for customer in customers %}
+                {% set image = customer.logo[0] ?? null %}
+                    <div class="slide">
+                        <img class="w-7/12 mx-auto" alt="{{ customer.title }}" src="{{ image.url() }}" />
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+
     {% include 'partials/_contact-section' %}
 
     {% include 'partials/footer' %}
