@@ -1,24 +1,12 @@
-<<<<<<< HEAD
-dateModified: 1715368558
-=======
-dateModified: 1715303736
->>>>>>> 457b34a (Guardar cambios locales en project.yaml)
+dateModified: 1715374029
 email:
   fromEmail: hola@ofeliaexperience.com
   fromName: 'Grupo Ciesc'
   replyToEmail: null
   template: null
   transportSettings:
-<<<<<<< HEAD
     command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
-=======
-    apiKey: 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
-    categories:
-      -
-        - 'Contact Form'
-  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
->>>>>>> 457b34a (Guardar cambios locales en project.yaml)
 meta:
   __names__:
     0c244101-546b-4dfe-8cd5-9f464cf6fe03: 'Meta Description' # Meta Description
@@ -132,7 +120,7 @@ system:
   live: true
   name: 'Grupo Ciesc'
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 3.8.0.1
   timeZone: America/Mexico_City
 users:
   allowPublicRegistration: false
