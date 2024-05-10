@@ -23,8 +23,9 @@
                     expertos se pondrá en contacto contigo para confirmar una reunión 
                     dónde podremos conocer a detalle las encesidades de tu emrpesa.</p>
                     <div class="">
-                        <a class="dib pv3 ph3 br3 bg-white no-underline mr3 ciesc-blue" href="">Enviar WhatsApp</a>
-                        <a class="prim-btn dib pv3 ph3 br3" href="">Regresar al Inicio</a>
+               
+                        {#<a class="dib pv3 ph3 br3 bg-white no-underline mr3 ciesc-blue" href="">Enviar WhatsApp</a>#}
+                        <a class="prim-btn dib pv3 ph3 br3" href="{{url('/')}}">Regresar al Inicio</a>
                     </div>
                 </div>
                 <div class="w-50-ns w-100">
@@ -36,11 +37,13 @@
                         </div>
                         <div>
                             <h4 class="f4 mv0 pv0"> Visita nuestro blog</h4>
-                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                            <p class="mt0  pv0 mb0">No te pierdas de noticias, consejos financieros 
+                            y actualizaciones sobre el mundo laboral. Nuestro blog tiene información única y alta calidad. 
+                            </p>
                         </div>
                        
                     </a>
-                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{url('blog')}}" >
+                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{ companyInfo.facebook }}" target="_blank" >
                         <div class=" pr3">
                             <span class="dib w3 h3 bg-lightest-blue br2 flex items-center justify-center">
                                 <i class="fb-color f3 fa-brands fa-square-facebook"></i>
@@ -48,11 +51,12 @@
                         </div>
                         <div>
                             <h4 class="f4 mv0 pv0">Perfil de Facebook</h4>
-                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                            <p class="mt0  pv0 mb0">Visita nuestro perfil de Facebook y sigue de cerca  nuestras publicaciones con consejos y tips para tu empresa. 
+                            </p>
                         </div>
                        
                     </a>
-                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{url('blog')}}" >
+                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{ companyInfo.linkedin }}" target="_blank" >
                         <div class="pr3">
                             <span class="dib w3 h3 bg-washed-green br flex items-center justify-center no-underline">
                                 <i class="ld-color f3 fa-brands fa-linkedin-in"></i>
@@ -60,7 +64,8 @@
                         </div>
                         <div>
                             <h4 class="f4 mv0 pv0">Grupo Ciesc en Linked In</h4>
-                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                            <p class="mt0  pv0 mb0">Somos profesionales comprometidos con la comunidad empresarial. 
+                            Compartimos contenido de alto valor para emprendedores y empresas que te llevarán al éxito empresarial</p>
                         </div>
                        
                     </a>
