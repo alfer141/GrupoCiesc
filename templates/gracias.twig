@@ -1,0 +1,72 @@
+{% extends 'partials/layout' %}
+{% block title %}{{ siteName }} | Tu mensaje ha sido envíado{% endblock %}
+
+{% block metas %}
+    <link rel="canonical" href="{{siteUrl}}"/>
+    <meta content="{{ siteName }} | Tu mensaje ha sido envíado{" property="og:title"/>
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" name="description">
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" property="og:description">
+    <meta property="og:image" content="/images/og-image.png">
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+    <meta name="robots" content="noindex">
+
+{% endblock %}
+{% block content %}
+    <main class="bg-near-white">
+        <div class="mwc ph3 center tc pv6">
+            <div class="flex flex-wrap">
+                <div class="w-50-ns w-100 tl">
+                    <h1 class="mv0 pv0 fw4 f5"><i class="green fa-sharp fa-solid fa-circle-check"></i> Tu mensaje ha sido envíado</h1>
+                    <h2 class="f-subheadline fw8 lh-solid mv0 pv0">¡Gracias por contactarnos!</h2>
+                    <p>En un periodo máximo de 2 horas uno de nuestros asesores
+                    expertos se pondrá en contacto contigo para confirmar una reunión 
+                    dónde podremos conocer a detalle las encesidades de tu emrpesa.</p>
+                    <div class="">
+                        <a class="dib pv3 ph3 br3 bg-white no-underline mr3 ciesc-blue" href="">Enviar WhatsApp</a>
+                        <a class="prim-btn dib pv3 ph3 br3" href="">Regresar al Inicio</a>
+                    </div>
+                </div>
+                <div class="w-50-ns w-100">
+                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{url('blog')}}" >
+                        <div class=" pr3">
+                            <span class="dib w3 h3 bg-washed-red br2 flex items-center justify-center">
+                                <i class="fa-regular fa-newspaper prim-color f3"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="f4 mv0 pv0"> Visita nuestro blog</h4>
+                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                        </div>
+                       
+                    </a>
+                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{url('blog')}}" >
+                        <div class=" pr3">
+                            <span class="dib w3 h3 bg-lightest-blue br2 flex items-center justify-center">
+                                <i class="fb-color f3 fa-brands fa-square-facebook"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="f4 mv0 pv0">Perfil de Facebook</h4>
+                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                        </div>
+                       
+                    </a>
+                    <a class="bg-white flex items-center br3 tl no-underline pv3 ph4 grow mb3" href="{{url('blog')}}" >
+                        <div class="pr3">
+                            <span class="dib w3 h3 bg-washed-green br flex items-center justify-center no-underline">
+                                <i class="ld-color f3 fa-brands fa-linkedin-in"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="f4 mv0 pv0">Grupo Ciesc en Linked In</h4>
+                            <p class="mt0  pv0 mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum.</p>
+                        </div>
+                       
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+

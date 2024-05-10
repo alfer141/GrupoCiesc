@@ -168,24 +168,46 @@
                     </div>
                 </div>
                 <div class="w-40-ns w-100 pl4-ns pl3-m pl0">
+                    {% macro errorList(errors) %}
+                        {% if errors %}
+                            {{ ul(errors, {class: 'errors'}) }}
+                        {% endif %}
+                    {% endmacro %}
+                    {% set submission = submission ?? null %}
                     <h2 class="f2 mb0 pb0 mt0 pt0">Contacto y asesoría <i class="fa-solid fa-hand-wave"></i></h2>
                     <p class="mt0 pt0 fw4 lh-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P.</p>
-                    <form class="component_form flex flex-wrap" action="">
+                    <form class="component_form flex flex-wrap"  method="post" action="" accept-charset="UTF-8">
+                        {{ csrfInput() }}
+                        {{ actionInput('contact-form/send') }}
+                        {{ redirectInput('gracias') }}
                         <div class="w-100 mb3">
-                            <label class="f6 db" for="">Nombre completo</label>
-                            <input placeholder="Tu nombre completo" class="w-100 pv3 ph3" type="text" name="" id="">
+                            <label class="f6 db" for="from-name">Nombre completo</label>
+                            {{ input('text', 'fromName', submission.fromName ?? '', {
+                                id: 'from-name',
+                                autocomplete: 'name',
+                                placeholder:'Tu nombre completo',
+                                class:'w-100 pv3 ph3'
+                            }) }}
+                            {{ submission ? _self.errorList(submission.getErrors('fromName')) }}
                         </div>
                         <div class="w-100 mb3">
-                            <label class="f6" for="">Correo electrónico</label>
-                            <input placeholder="hola@grupociesc.com"  class="w-100 pv3 ph3" type="text" name="" id="">
+                            <label class="f6" for="from-email">Correo electrónico</label>
+                            {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                                id: 'from-email',
+                                autocomplete: 'email',
+                                placeholder:'hola@grupociesc.com',
+                                class:'w-100 pv3 ph3'
+                            }) }}
+                            {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+
                         </div>
                         <div class="w-50 mb3 pr2">
-                            <label class="f6" for="">Numero de contacto</label>
-                            <input placeholder="5512000000" class="w-100 pv3 ph3" type="text" name="" id="">
+                            <label class="f6" for="phone">Numero de contacto</label>
+                            <input id="phone" placeholder="5512000000" class="w-100 pv3 ph3" type="text" name="message[Phone]" id="">
                         </div>
                         <div class="w-50 mb3 pl2">
-                            <label for="">Empresa</label>
-                            <input placeholder="Nombre de tu empresa" class="w-100 pv3 ph3" type="text" name="" id="">
+                            <label for="company">Empresa</label>
+                            <input id="company" placeholder="Nombre de tu empresa" class="w-100 pv3 ph3" type="text" name="message[Company]"id="">
                         </div>
                         <div>
                             <h4 class="mt0 pv0 f5 mb3">¿Cómo podemos ayudarte?</h4>
@@ -193,8 +215,8 @@
                             <div class="flex flex-wrap items-center mb3">
                                 {% for service in services %}
                                 <div class="w-50 mb2 pb1 pr2">
-                                    <input type="checkbox" name="vehicle1" value="Bike">
-                                    <label class="o-70" for="vehicle1"> {{ service.title }}</label><br>
+                                    <input type="checkbox" name="message[Services][]" value="{{ service.title }}">
+                                    <label class="o-70" for="Services"> {{ service.title }}</label><br>
                                 </div>
                                 
                                 {% endfor %}
@@ -204,7 +226,7 @@
 
                         
                         </div>
-                        <button class="prim-btn db w-100 tc br2 b--transparent pv3 f4 pointer">Enviar contacto</button>
+                        <button type="submit" class="prim-btn db w-100 tc br2 b--transparent pv3 f4 pointer">Enviar contacto</button>
                     </form>
                 </div>
             </div>

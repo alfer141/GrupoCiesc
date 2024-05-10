@@ -25,6 +25,11 @@ footer{
     border-color: transparent;
     border-radius: 4px;
 }
+.component_form input[type=email]{
+    background-color: #F8F8F8;
+    border-color: transparent;
+    border-radius: 4px;
+}
 .component_form label{
     color: #292735;
 }
