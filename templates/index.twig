@@ -130,6 +130,7 @@
         .with(['logo'])
         .all()
         %}
+       {# 
     <section class="h-customer pv5-ns pv3">
         <div class="mwc center ph3">
             <div class="tc w-60-ns center w-100">
@@ -147,15 +148,19 @@
                 {% endfor %}
             </div>
         </div>
-    </section>
+    </section>#}
 
-    <div class="brands  pv5 mt4">
+    <div class="brands pv6">
+            <div class="w-40-ns w-100 center mb3 mt5 tc ph0-ns ph3">
+                <h2 class="f2 lh-solid">Tenemos la confianza de grandes empresas y marcas memorables</h2>
+                <p>Conoce a quienes forman parte de nuestra red de servicios y orgullosamente están satisfechos con nuestro trabajo.</p>
+            </div>
             <div class="slider flex items-center  pv4">
-                <div class="slide-track items-center">
+                <div class="slide-track items-center pv5">
                 {% for customer in customers %}
                 {% set image = customer.logo[0] ?? null %}
                     <div class="slide">
-                        <img class="w-7/12 mx-auto" alt="{{ customer.title }}" src="{{ image.url() }}" />
+                        <img class="w-100 center mh4" alt="{{ customer.title }}" src="{{ image.url() }}" />
                     </div>
                 {% endfor %}
                 </div>

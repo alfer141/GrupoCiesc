@@ -39,7 +39,7 @@ footer{
 }
 
 .slider {
-    height: 100px;
+    height: 200px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -48,12 +48,17 @@ footer{
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px* 14);
+    width: 3300px;
+
 }
 .slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+.slide{
+    min-width: 170px;
+    margin-right: 1.5rem !important;
 }
 
 @-webkit-keyframes scroll {
