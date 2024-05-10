@@ -1,8 +1,24 @@
-dateModified: 1715302996
+<<<<<<< HEAD
+dateModified: 1715368558
+=======
+dateModified: 1715303736
+>>>>>>> 457b34a (Guardar cambios locales en project.yaml)
 email:
-  fromEmail: hola@draw.mx
+  fromEmail: hola@ofeliaexperience.com
   fromName: 'Grupo Ciesc'
+  replyToEmail: null
+  template: null
+  transportSettings:
+<<<<<<< HEAD
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
+=======
+    apiKey: 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
+    categories:
+      -
+        - 'Contact Form'
+  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
+>>>>>>> 457b34a (Guardar cambios locales en project.yaml)
 meta:
   __names__:
     0c244101-546b-4dfe-8cd5-9f464cf6fe03: 'Meta Description' # Meta Description
@@ -11,6 +27,7 @@ meta:
     3b094a3b-b91d-4668-931f-44fa022c2be6: 'Imagen del artículo' # Imagen del artículo
     3c0e1e4e-7598-4723-9566-831a3692dc3e: 'Dirección Pachuca' # Dirección Pachuca
     4b932bdd-e388-4934-9252-b2bd49692bd2: Logotipo # Logotipo
+    006fbfdc-6b86-4dc3-b898-a9b30cd5a062: 'Dirección Querétaro' # Dirección Querétaro
     7d0e2044-bdde-4103-b287-befbcf056b1a: Autor # Autor
     7ea02965-8095-44b1-81ce-0282a9387fe3: 'Grupo Ciesc' # Grupo Ciesc
     8a4111a1-6f82-4333-9d2c-be2325bf6e87: 'Descripción del servicio' # Descripción del servicio
@@ -39,6 +56,7 @@ meta:
     e89be7fb-054e-4159-a360-c0c9faa4efbe: 'Grupo Ciesc' # Grupo Ciesc
     f8d4d697-6246-4269-bd95-429ae9eec14f: 'Icono ' # Icono 
     f4832466-aec3-460d-875a-e0295b369b56: Servicios # Servicios
+    fe51675c-165a-43b1-a367-0e28d4c642d5: qroPhone # qroPhone
     ff0ed6db-0124-45b3-aa76-69914ea4ee79: 'Categoría del articulo' # Categoría del articulo
 plugins:
   contact-form:
