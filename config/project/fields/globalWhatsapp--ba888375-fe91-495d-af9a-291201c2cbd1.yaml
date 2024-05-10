@@ -1,0 +1,19 @@
+columnSuffix: ljewwbzd
+contentColumnType: text
+fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece # Datos de la empresa
+handle: globalWhatsapp
+instructions: ''
+name: 'Global WhatsApp'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
