@@ -4,16 +4,20 @@
                 <div class="w-60-ns w-100 pr2-ns">
                     <img class="db-ns dn"  src="/images/contact_form.webp" alt="Información de contacto Grupo Ciesc" />
                     <div class="flex flex-wrap">
+                        {% if companyInfo.pachucaAddress %}
                         <div  class="w-50-ns w-100">
                             <h3 class="mb0 pb0 f3">Suc. Pachuca</h3>
-                            <p class="mt1">Los Pinos Nº Interior 22, San Antonio del Desmonte Pachuca, Hgo. C.P 42111</p>
+                            <p class="mt1">{{ companyInfo.pachucaAddress  }}</p>
                             <a class="prim-color no-underline" href="tel:7716576633">771 657 66 33</a>
                         </div>
+                        {% endif %}
+                        {% if companyInfo.qroAddress %}
                         <div  class="w-50-ns w-100">
                             <h3 class="mb0 pb0 f3">Suc. Querétaro</h3>
-                            <p  class="mt1">Los Pinos Nº Interior 22, San Antonio del Desmonte Pachuca, Hgo. C.P 42111</p>
+                            <p  class="mt1">{{ companyInfo.qroAddress }}</p>
                             <a class="prim-color no-underline" href="">771 657 66 33</a>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="w-40-ns w-100 pl4-ns pl3-m pl0">
