@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "835c16c7ea1111ce7ab55033fa101f71",
+    "content-hash": "557737c2187a71b76ae82ac8d60266fd",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -441,6 +441,56 @@
                 "performance"
             ],
             "time": "2024-05-06T16:37:16+00:00"
+        },
+        {
+            "name": "craftcms/ckeditor",
+            "version": "1.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/ff2d2c01fa6eccfe888e2cc82c2269cb9db1be55",
+                "reference": "ff2d2c01fa6eccfe888e2cc82c2269cb9db1be55",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.7.63",
+                "craftcms/html-field": "^1.0.4"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "CKEditor",
+                "handle": "ckeditor",
+                "documentationUrl": "https://github.com/craftcms/ckeditor/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\ckeditor\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using CKEditor.",
+            "keywords": [
+                "ckeditor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
+                "source": "https://github.com/craftcms/ckeditor",
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
+            },
+            "time": "2023-01-04T22:28:37+00:00"
         },
         {
             "name": "craftcms/cms",

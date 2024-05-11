@@ -1,4 +1,4 @@
-dateModified: 1715378991
+dateModified: 1715449400
 email:
   fromEmail: hola@ofeliaexperience.com
   fromName: 'Grupo Ciesc'
@@ -49,6 +49,10 @@ meta:
     fe51675c-165a-43b1-a367-0e28d4c642d5: qroPhone # qroPhone
     ff0ed6db-0124-45b3-aa76-69914ea4ee79: 'Categoría del articulo' # Categoría del articulo
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   contact-form:
     edition: standard
     enabled: true
