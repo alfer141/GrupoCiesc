@@ -8,9 +8,9 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
+  ckeConfig: 99d06683-b4dc-4996-af1e-a55db9b88f75 # Simple
   columnType: text
   defaultTransform: ''
-  initJs: null
   purifierConfig: ''
   purifyHtml: '1'
   removeEmptyTags: false
