@@ -182,15 +182,34 @@
             </div>
         </div>
     </section>
+    {% include 'partials/_contact-section' %}
 
-    <section>
+    <section class="service_tmp_faq pv5-ns pv4">
         <div class="mwc center ph3">
             <div class="flex flex-wrap">
-                <div class="w-50-ns w-100"></div>
-                <div class="w-50-ns w-100"></div>
+                <div class="w-50-ns w-100">
+                    <div class="w-60-ns w-100">
+                        <h2 class="f1 lh-solid mb2 tracked-tight">Preguntas frecuentes</h2>
+                        <p class="lh-copy mt0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quae cum essent dicta, discessimus. </p>
+                        <a class="prim-color dib" href="mailto:contacto@grupociesc.com" target="_blank">contacto@grupociesc.com</a>
+                    </div>
+
+                </div>
+                <div class="w-50-ns w-100" x-data="{ openFaq: null }">
+                    <div class="bg-white pv3 ph4 br3 pointer"  @click="openFaq = openFaq === '1' ? null : '1'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>¿Qué información necesito para empezar?</h3>
+                            <i :class="{'fas fa-minus': openFaq === '1', 'fas fa-plus': openFaq !== '1'}" class="f3"></i>
+                        </div>
+                        <div class="faq_answer" x-show="openFaq === '1'" x-transition>
+                            <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    {% include 'partials/_contact-section' %}
+
     {% include 'partials/footer' %}
  {% endblock %}

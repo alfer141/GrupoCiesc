@@ -364,3 +364,11 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ff5
     background-color: transparent;
     border: transparent;
 }
+.service_tmp_faq{
+    background-color: #F1F2F3;
+    background-image: url('/images/dots-pattern.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
