@@ -5,6 +5,7 @@
     "craftcms/ckeditor": "3.8.3",
     "craftcms/cms": "^4.0.0",
     "craftcms/contact-form": "3.1.0",
+    "craftcms/feed-me": "^5.4.0",
     "ether/seo": "4.2.2",
     "putyourlightson/craft-sendgrid": "2.0.1",
     "vlucas/phpdotenv": "^3.4.0",

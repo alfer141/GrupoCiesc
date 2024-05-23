@@ -1,0 +1,196 @@
+{% extends 'partials/layout' %}
+{% block title %} Servicios | {{ siteName }}{% endblock %}
+{% block metas %}
+     <link rel="canonical" href="{{siteUrl}}"/>
+    <meta content="Consultoría empresarial y fiscal | {{ siteName }}" property="og:title"/>
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" name="description">
+    <meta content="Grupo CIESC, el mejor despacho  de servicios fiscales, contabilidad, asesoría financiera, outsourcing, auditoria e impuestos en Pachuca. Contamos con expertos en la materia listos para ayudarte" property="og:description">
+    <meta property="og:image" content="/images/og-image.png">
+	<meta property="og:url" content="{{siteUrl}}">
+	<meta name="twitter:card" content="summary_large_image"/>
+ {% endblock %}
+
+ {% block content %}
+    
+    <main class="service_tmp_main" style="background-color: #1A263E;">
+        {% include 'partials/nav' %}
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap pv5 ">
+                <div class="w-50-ns w-100 mt3">
+                    <h1 class="f5 fw5 white mb3 pb0">Contabildad electrónica</h1>
+                    <h2 class="f1 white lh-solid mt0 pt0 mb3">Llevamos los impuestos de tu empresa</h2>
+                    <p class="lh-copy white">Te garantizamos Asesoría Jurídica en materia 
+                    de impuestos federales y locales, diseñamos las 
+                    estrategias oportunas con el objetivo de optimizar 
+                    el recurso, considerando las mejores opciones apegadas 
+                    al marco legal.</p>
+                    <a class="prim-btn pv3 ph3 br2 dib" href="{{url('contacto')}}">Agenda tu asesoría</a>
+                </div>
+                <div class="w-50-ns w-100">
+                    <div class="serviceMain_imageWrapper">
+                        <img src="/images/service_example.webp" alt="Service  title" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="pv4 ">
+        <div class="mwc center pv2">
+            <div class="flex flex-wrap">
+                <div class="w-30-ns w-100  pv2">
+                    <h3 class="fw5 f3 lh-title">Grandes y pequeñas empresas que han confiado con nosotros</h3>
+                </div>
+                <div class="w-70-ns w-100  pv2">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="pv5-ns pv3">
+        <div class="mwc center ph3">
+            <div>
+                <h2 class="f1 tracked-tight lh-solid w-50-ns w-100">Para quien es el servicio de aseoría jurídica</h2>
+                <p class="lh-copy">Independientemente del tamaño de tu empresa, nuestro 
+                servicio de Asesoría Jurídica se acopla a empresas de diferente naturaleza, 
+                tamaño y sin importar en la industria en la que se desempeñan.
+                Desde Startups en crecimiento hasta corporaciones consolidadas 
+                de inversión nacional o extranjera, el servicio 
+                de Asesoría Jurídica representa grandes beneficios, 
+                entre ellos enfocar tus esfuerzos en tu negocio, mientras 
+                nuestro equipo se encarga de resolver los asuntos legales que tu empresa requiere.</p>
+            </div>
+
+            <div class="flex flex-wrap mt4 pv2"  x-data="{ openTab: 'pyme' }">
+                <div class="w-30">
+                    <ul class="list pl0">
+                        <li class="pv2 ph4 mb3  dib br3 pointer" :class="{ 'bg-light-gray': openTab === 'pyme' }">
+                            <button class="serv_openTab_btn" @click="openTab = 'pyme'">
+                                <i class="fa-regular fa-store"></i> PYMES
+                            </button> 
+                         </li>
+                        <li class="pv2 ph4 mb3 dib br3" :class="{ 'bg-light-gray': openTab === 'startup' }">
+                            <button class="serv_openTab_btn"  @click="openTab = 'startup'">
+                                <i class="fa-regular fa-building"></i> Startups y Emprendedores
+                            </button>
+                        </li>
+                        <li class="pv2 ph4 mb3 dib br3" :class="{ 'bg-light-gray': openTab === 'corpo' }">
+                            <button class="serv_openTab_btn"  @click="openTab = 'corpo'"><i class="fa-regular fa-buildings"></i> Corporaciones
+                            </button>
+                        </li>
+                        <li class="pv2 ph4 mb3 dib br3" :class="{ 'bg-light-gray': openTab === 'reg' }">
+                            <button class="serv_openTab_btn"  @click="openTab = 'reg'"><i class="fa-regular fa-building-columns"></i> Industrias Reguladas</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-70">
+                    <div x-show="openTab === 'pyme' " x-transition>
+                        <p class="lh-copy mb3">Las pequeñas y medianas empresas, se enfrentan 
+                        constantemente a desafíos legales similiares 
+                        a las grandes corporaciones, pero con un recurso limítado. 
+                        Te proporcionamos asesoramiento asequible 
+                        y orientado a soluciones para resolver problemas 
+                        legales y mitigar riesgos.</p>
+                        <div class="serviceTarget_imageWrapper"></div>
+                    </div>
+                    <div x-show="openTab === 'startup' " x-transition>
+                        <p class="lh-copy mb3 red">Las pequeñas y medianas empresas, se enfrentan 
+                        constantemente a desafíos legales similiares 
+                        a las grandes corporaciones, pero con un recurso limítado. 
+                        Te proporcionamos asesoramiento asequible 
+                        y orientado a soluciones para resolver problemas 
+                        legales y mitigar riesgos.</p>
+                        <div class="serviceTarget_imageWrapper"></div>
+                    </div>
+                    <div x-show="openTab === 'corpo' " x-transition>
+                        <p class="lh-copy mb3 green">Las pequeñas y medianas empresas, se enfrentan 
+                        constantemente a desafíos legales similiares 
+                        a las grandes corporaciones, pero con un recurso limítado. 
+                        Te proporcionamos asesoramiento asequible 
+                        y orientado a soluciones para resolver problemas 
+                        legales y mitigar riesgos.</p>
+                        <div class="serviceTarget_imageWrapper"></div>
+                    </div>
+                    <div x-show="openTab === 'reg' " x-transition>
+                        <p class="lh-copy mb3 yellow">Las pequeñas y medianas empresas, se enfrentan 
+                        constantemente a desafíos legales similiares 
+                        a las grandes corporaciones, pero con un recurso limítado. 
+                        Te proporcionamos asesoramiento asequible 
+                        y orientado a soluciones para resolver problemas 
+                        legales y mitigar riesgos.</p>
+                        <div class="serviceTarget_imageWrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pv5-ns pv4" style="background-color: #F5E9E5;">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap items-center">
+                <div class="w-50-ns pr3-ns">
+                    <h2 class="ttu prim-color f5 fw6">Beneficios</h2>
+                    <h3 class="f1 mt0 pt0 lh-solid tracked-tight">No pierdas la oportunidad de mejorar tu empresa</h3>
+                </div>
+                <div class="w-40-ns">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum essent dicta, discessimus. s</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-third">
+                    <div class="w-90 center bg-white pa4 br3">
+                        <div class="w2 h2 br2 prim-bg flex items-center justify-center">
+                            <i class="fa-duotone fa-user-tie white w-70"></i>
+                        </div>
+                        <h3 class="f3">Experiencia profesional</h3>
+                        <p class="lh-copy">Equipo integrado por especialistas 
+                        en diversas áreas del derecho. Con experiencia 
+                        en la resolución de casos de índoles diversas. 
+                        Te brindamos la orientación adecuada en cualquier 
+                        situación legal de tu empresa. </p>
+                    </div>
+                </div>
+                <div class="w-third">
+                    <div class="w-90 center bg-white pa4 br3">
+                        <div class="w2 h2 br2 prim-bg flex items-center justify-center">
+                            <i class="fa-duotone fa-user-tie white w-70"></i>
+                        </div>
+                        <h3 class="f3">Asesoría personalizada</h3>
+                        <p class="lh-copy">Nuestra política de operación 
+                        se basa en el entendimiento de que cada 
+                        cliente es diferente y en ese mismo sentido, 
+                        esto es lo que nos permite bridar una atención 
+                        personalizada. Iniciaremos siempre por una etapa 
+                        de conocimiento detallado de la empresa y el caso a resolver, para brindar la solución a la medida. </p>
+                    </div>
+                </div>
+                <div class="w-third">
+                    <div class="w-90 center bg-white pa4 br3">
+                        <div class="w2 h2 br2 prim-bg flex items-center justify-center">
+                            <i class="fa-duotone fa-user-tie white w-70"></i>
+                        </div>
+                        <h3 class="f3">Resolución eficiente de problemas</h3>
+                        <p class="lh-copy">Trabajamos día a día para encontrar 
+                        las soluciones más eficientes y efectivas 
+                        a los problemas de índole legal, de nuestros clientes, 
+                        sin importar la índole de asistencia que se requiera. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap">
+                <div class="w-50-ns w-100"></div>
+                <div class="w-50-ns w-100"></div>
+            </div>
+        </div>
+    </section>
+    {% include 'partials/_contact-section' %}
+    {% include 'partials/footer' %}
+ {% endblock %}

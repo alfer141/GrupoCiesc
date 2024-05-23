@@ -327,3 +327,40 @@ footer{
 opacity: 1;
 background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ff5722 40px ), repeating-linear-gradient( #ff754655, #ff7546 );
 }
+.serviceMain_imageWrapper{
+    background-color: #3A3F47;
+    width: 485px;
+    height: 485px;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.serviceMain_imageWrapper > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 1rem;
+}
+.serviceTarget_imageWrapper{
+    width: 100%;
+    height: 300px;
+    border-radius: 1.5rem;
+    background-color: #111A2B;
+}
+.serviceTarget_imageWrapper > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 1.5rem;
+}
+.service_tmp_main{
+    background-image: url('/images/service_tmp_bg.webp');
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.serv_openTab_btn{
+    background-color: transparent;
+    border: transparent;
+}
