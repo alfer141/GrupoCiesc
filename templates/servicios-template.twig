@@ -42,7 +42,21 @@
                     <h3 class="fw5 f3 lh-title">Grandes y pequeñas empresas que han confiado con nosotros</h3>
                 </div>
                 <div class="w-70-ns w-100  pv2">
-                    
+                    {% set customers = craft.entries()
+                        .section('customers')
+                        .with(['logo'])
+                        .all()
+                    %}
+                    <div class="slider flex items-center  pv4">
+                        <div class="slide-track items-center pv5">
+                        {% for customer in customers %}
+                        {% set image = customer.logo[0] ?? null %}
+                            <div class="slide">
+                                <img class="w-100 center mh4" alt="{{ customer.title }}" src="{{ image.url() }}" />
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -93,34 +107,42 @@
                         Te proporcionamos asesoramiento asequible 
                         y orientado a soluciones para resolver problemas 
                         legales y mitigar riesgos.</p>
-                        <div class="serviceTarget_imageWrapper"></div>
+                        <div class="serviceTarget_imageWrapper">
+                            <img src="/images/services_temp/pymes.webp" alt="" />
+                        </div>
                     </div>
                     <div x-show="openTab === 'startup' " x-transition>
-                        <p class="lh-copy mb3 red">Las pequeñas y medianas empresas, se enfrentan 
+                        <p class="lh-copy mb3">Las pequeñas y medianas empresas, se enfrentan 
                         constantemente a desafíos legales similiares 
                         a las grandes corporaciones, pero con un recurso limítado. 
                         Te proporcionamos asesoramiento asequible 
                         y orientado a soluciones para resolver problemas 
                         legales y mitigar riesgos.</p>
-                        <div class="serviceTarget_imageWrapper"></div>
+                        <div class="serviceTarget_imageWrapper">
+                            <img src="/images/services_temp/startups.webp" alt="" />
+                        </div>
                     </div>
                     <div x-show="openTab === 'corpo' " x-transition>
-                        <p class="lh-copy mb3 green">Las pequeñas y medianas empresas, se enfrentan 
+                        <p class="lh-copy mb3">Las pequeñas y medianas empresas, se enfrentan 
                         constantemente a desafíos legales similiares 
                         a las grandes corporaciones, pero con un recurso limítado. 
                         Te proporcionamos asesoramiento asequible 
                         y orientado a soluciones para resolver problemas 
                         legales y mitigar riesgos.</p>
-                        <div class="serviceTarget_imageWrapper"></div>
+                        <div class="serviceTarget_imageWrapper">
+                            <img src="/images/services_temp/corpo.webp" alt="" />
+                        </div>
                     </div>
                     <div x-show="openTab === 'reg' " x-transition>
-                        <p class="lh-copy mb3 yellow">Las pequeñas y medianas empresas, se enfrentan 
+                        <p class="lh-copy mb3">Las pequeñas y medianas empresas, se enfrentan 
                         constantemente a desafíos legales similiares 
                         a las grandes corporaciones, pero con un recurso limítado. 
                         Te proporcionamos asesoramiento asequible 
                         y orientado a soluciones para resolver problemas 
                         legales y mitigar riesgos.</p>
-                        <div class="serviceTarget_imageWrapper"></div>
+                        <div class="serviceTarget_imageWrapper">
+                            <img src="/images/services_temp/reg.webp" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +219,7 @@
 
                 </div>
                 <div class="w-50-ns w-100" x-data="{ openFaq: null }">
-                    <div class="bg-white pv3 ph4 br3 pointer"  @click="openFaq = openFaq === '1' ? null : '1'">
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '1' ? null : '1'">
                         <div class="faq_question flex flex-wrap items-center justify-between">
                             <h3>¿Qué información necesito para empezar?</h3>
                             <i :class="{'fas fa-minus': openFaq === '1', 'fas fa-plus': openFaq !== '1'}" class="f3"></i>
@@ -206,6 +228,46 @@
                             <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
                         </div>
                     </div>
+
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '2' ? null : '2'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>¿Qué información necesito para empezar?</h3>
+                            <i :class="{'fas fa-minus': openFaq === '2', 'fas fa-plus': openFaq !== '2'}" class="f3"></i>
+                        </div>
+                        <div class="faq_answer" x-show="openFaq === '2'" x-transition>
+                            <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '3' ? null : '3'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>¿Qué información necesito para empezar?</h3>
+                            <i :class="{'fas fa-minus': openFaq === '3', 'fas fa-plus': openFaq !== '3'}" class="f3"></i>
+                        </div>
+                        <div class="faq_answer" x-show="openFaq === '3'" x-transition>
+                            <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '4' ? null : '4'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>¿Qué información necesito para empezar?</h3>
+                            <i :class="{'fas fa-minus': openFaq === '4', 'fas fa-plus': openFaq !== '4'}" class="f3"></i>
+                        </div>
+                        <div class="faq_answer" x-show="openFaq === '4'" x-transition>
+                            <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '4' ? null : '4'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>¿Qué información necesito para empezar?</h3>
+                            <i :class="{'fas fa-minus': openFaq === '4', 'fas fa-plus': openFaq !== '4'}" class="f3"></i>
+                        </div>
+                        
+                        <div class="faq_answer" x-show="openFaq === '4'" x-transition>
+                            <p class="lh-copy">Gerendus est mos, modo recte sentiat. Respondeat totidem verbis. Comprehensum, quod cognitum non habet? Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
