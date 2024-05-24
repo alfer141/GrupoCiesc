@@ -369,6 +369,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ff5
     background-image: url('/images/dots-pattern.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
+}
+
+@media only screen and (max-width: 600px){
+    .serviceMain_imageWrapper{
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
