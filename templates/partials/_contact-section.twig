@@ -6,14 +6,14 @@
                     <div class="flex flex-wrap">
                         {% if companyInfo.pachucaAddress %}
                         <div  class="w-50-ns w-100">
-                            <h3 class="mb0 pb0 f3">Suc. Pachuca</h3>
+                            <h3 class="mb0 pb0 f3">Oficinas Pachuca</h3>
                             <p class="mt1">{{ companyInfo.pachucaAddress  }}</p>
                             <a class="prim-color no-underline" href="tel:{{companyInfo.pachucaPhone }}">{{companyInfo.pachucaPhone }}</a>
                         </div>
                         {% endif %}
                         {% if companyInfo.qroAddress %}
                         <div  class="w-50-ns w-100">
-                            <h3 class="mb0 pb0 f3">Suc. Querétaro</h3>
+                            <h3 class="mb0 pb0 f3">Oficinas Querétaro</h3>
                             <p  class="mt1">{{ companyInfo.qroAddress }}</p>
                             <a class="prim-color no-underline" href="tel:{{companyInfo.pachucaPhone }}" >{{ companyInfo.qrophone }}</a>
                         </div>
@@ -28,7 +28,7 @@
                     {% endmacro %}
                     {% set submission = submission ?? null %}
                     <h2 class="f2 mb0 pb0 mt0 pt0">Contacto y dudas <i class="fa-solid fa-hand-wave"></i></h2>
-                    <p class="mt0 pt0 fw4 lh-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P.</p>
+                    <p class="mt0 pt0 fw4 lh-title">Un Asesor te contactará para brindarte más detalles sobre cómo podemos ser un aliado para tu empresa.</p>
                     <form class="component_form flex flex-wrap"  method="post" action="" accept-charset="UTF-8">
                         {{ csrfInput() }}
                         {{ actionInput('contact-form/send') }}
