@@ -1,0 +1,19 @@
+columnSuffix: swaaidax
+contentColumnType: text
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: benefitsSubtitle
+instructions: '(h3) Justo debajo del título'
+name: 'Subtítulo: Beneficios'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

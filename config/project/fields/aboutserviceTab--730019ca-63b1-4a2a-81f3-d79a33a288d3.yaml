@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: aboutserviceTab
+instructions: 'Crea las secciones de tu componente TAB'
+name: 'Tab: About Service'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_aboutservicetab}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

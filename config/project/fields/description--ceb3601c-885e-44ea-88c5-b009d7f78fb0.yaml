@@ -1,0 +1,19 @@
+columnSuffix: zpuvjoqg
+contentColumnType: text
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: description
+instructions: '(P) Describe el servicio de forma breve y persuasiva.'
+name: Descripción
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

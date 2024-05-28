@@ -1,0 +1,127 @@
+field: 730019ca-63b1-4a2a-81f3-d79a33a288d3 # Tab: About Service
+fieldLayouts:
+  afcd76c4-f1e8-4a2c-a68e-ccbaf67b8784:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 21d81c44-ef28-4203-9336-6bad04d1bac2 # Título del Tab
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf766b49-a452-41fd-8738-fde0509eeff0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 22cf0bd6-cf0a-43f9-9172-a150eb84749b # Descripción del Tab
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: deb63876-4e8b-42d0-9376-97be2a75910f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 906fe59e-3943-4e90-b057-95f4e3a79332 # Imagen del tab
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c38c854-4890-4383-b815-f49f1e9b9a30
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 71987c37-c4d1-4209-8ef3-fc3531d1e684
+        userCondition: null
+fields:
+  21d81c44-ef28-4203-9336-6bad04d1bac2: # Título del Tab
+    columnSuffix: nbxzfjnw
+    contentColumnType: text
+    fieldGroup: null
+    handle: tabTitle
+    instructions: null
+    name: 'Título del Tab'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  22cf0bd6-cf0a-43f9-9172-a150eb84749b: # Descripción del Tab
+    columnSuffix: spteglqc
+    contentColumnType: text
+    fieldGroup: null
+    handle: tabDescription
+    instructions: null
+    name: 'Descripción del Tab'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  906fe59e-3943-4e90-b057-95f4e3a79332: # Imagen del tab
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: tabImage
+    instructions: null
+    name: 'Imagen del tab'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:964c97bb-a9cc-4e56-9fea-cf94cd23bd3f' # Imágenes públicas
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:964c97bb-a9cc-4e56-9fea-cf94cd23bd3f' # Imágenes públicas
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: serviceTab
+name: 'Service Tab'
+sortOrder: 1

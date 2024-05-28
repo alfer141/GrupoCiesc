@@ -1,0 +1,82 @@
+field: 898074cc-a3e9-48c5-95c5-d7e3f427b28a # Preguntas frecuentes
+fieldLayouts:
+  319c6574-38c9-43a5-ba70-0e892571ff6f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d1398a7c-0948-4f81-865e-12fe57fd7199 # Pregunta
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b42c412-780e-4c6b-9d69-7ba5d0c870d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3ced8099-e3b2-4e80-9514-74afbb899fa2 # Respuesta
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78f2d87b-fbf9-4cda-ab7d-189231c97184
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aad32f4b-4213-4708-ad9f-0bd0cfd124de
+        userCondition: null
+fields:
+  3ced8099-e3b2-4e80-9514-74afbb899fa2: # Respuesta
+    columnSuffix: tndcqvkf
+    contentColumnType: text
+    fieldGroup: null
+    handle: answer
+    instructions: null
+    name: Respuesta
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 99d06683-b4dc-4996-af1e-a55db9b88f75 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  d1398a7c-0948-4f81-865e-12fe57fd7199: # Pregunta
+    columnSuffix: cddzxuam
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: null
+    name: Pregunta
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: questionAndAnswer
+name: 'Q&A'
+sortOrder: 1

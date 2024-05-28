@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: benefitsCards
+instructions: 'Crea las tarjetas de los beneficios del servicio'
+name: 'Tarjetas de beneficios'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_benefitscards}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

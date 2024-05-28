@@ -1,0 +1,19 @@
+columnSuffix: wpkjbdyy
+contentColumnType: text
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: aboutServiceDescription
+instructions: 'Descripción justo debajo de su título'
+name: 'Descripción: Acerca del Servicio'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

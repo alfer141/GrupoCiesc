@@ -1,0 +1,19 @@
+columnSuffix: jbmmbjya
+contentColumnType: text
+fieldGroup: e52eea9d-e54c-463e-a654-1fa6e5cf25a5 # Common
+handle: metaTitle
+instructions: 'Título que se muestra en la SERP de Google'
+name: 'Meta title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
