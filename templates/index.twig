@@ -95,7 +95,7 @@
                                     </div>
                                     
                                     <div  x-show="showDescription" x-transition>
-                                        <p>{{ service.servFragment|truncate(200, '...') }}</p>
+                                        <p class="white-70">{{ service.servFragment|truncate(200, '...') }}</p>
                                         <a class="white no-underline service_card__link relative grow" href="{{ service.url() }}">Ver detalles del servicio <i class="fa-sharp fa-light fa-arrow-up-right"></i></a>
                                     </div>
                                 </div>
