@@ -2,6 +2,73 @@ fieldLayouts:
   9ef8a520-0da7-453a-ad6c-5202c48f48ca:
     tabs:
       -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f8d4d697-6246-4269-bd95-429ae9eec14f # Icono 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5bb3bd8-3ec4-4f1f-ad45-20a028b71ba8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b # Fragmento del servicio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4dad7f3a-4a18-4757-bed1-716df64bf183
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e0e1d402-f807-4daa-b61d-14470180a90d # Portada
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9afe50a3-3c1a-40bf-a15f-e79d61c5829c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 50dadc77-662b-4c96-8999-8356ec4d4481 # Imagen del servicio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3c6de2c-35b0-4c75-95a6-e92dd2b644a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a4111a1-6f82-4333-9d2c-be2325bf6e87 # Descripción del servicio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7299e029-347d-43ed-8f03-a641c1545798
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenido
+        uid: 5ea194a3-60b3-4e2d-ba74-b5b05a3e9d75
+        userCondition: null
+      -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +76,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,59 +93,197 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 298a67dd-d7f9-4dab-a647-dc1e03d51449
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: f8d4d697-6246-4269-bd95-429ae9eec14f # Icono 
+            elementCondition: null
+            fieldUid: 0ece2177-ba14-462f-9efe-82a142766c2e # Subtítulo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 69b8a908-322a-421e-9b03-db1e564ea5a8
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b # Fragmento del servicio
+            elementCondition: null
+            fieldUid: dd0ff666-90cf-4a9e-9a1d-426bf936caba # Imagen Principal
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2397ceff-ff4e-4ce5-9943-1ecbbb3e42d9
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: e0e1d402-f807-4daa-b61d-14470180a90d # Portada
+            elementCondition: null
+            fieldUid: ceb3601c-885e-44ea-88c5-b009d7f78fb0 # Descripción
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: acc34341-a73a-4b88-9c3b-52549b2881cf
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 50dadc77-662b-4c96-8999-8356ec4d4481 # Imagen del servicio
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 218d144c-f4ab-4621-aae4-88cc9f28e6eb
+            userCondition: null
+          -
+            elementCondition: null
+            heading: 'Sección 2'
+            type: craft\fieldlayoutelements\Heading
+            uid: ddae4d03-4fa5-4d7c-934f-bb90b6dd4aa0
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 4829c239-36d6-46df-a820-34cc6e878e7c # Título: Acerca del servicio
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 27aeed58-3495-478d-be81-789e37476b3c
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: 8a4111a1-6f82-4333-9d2c-be2325bf6e87 # Descripción del servicio
+            elementCondition: null
+            fieldUid: cccfdd68-ad26-438f-92b2-739904b918c9 # Descripción: Acerca del Servicio
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cc24507a-6e95-4346-82b1-51f0190e6609
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 730019ca-63b1-4a2a-81f3-d79a33a288d3 # Tab: About Service
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ceb32bfc-c042-49b6-b680-a4ce2fc0807e
+            userCondition: null
             warning: null
             width: 100
-        name: Contenido
-        sortOrder: 1
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 887814ef-5f58-42dd-a97e-4dfb49061991
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: e641dec4-cfc8-4b3e-8437-68efeb6a0075 # Título: Beneficios
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6af379e7-2bc6-40c4-8334-ec816ca93671
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 744a7203-a639-40fe-a5cd-d23d032fb15d # Subtítulo: Beneficios
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60f322f0-4a4d-4aec-98b2-49f7bb95c212
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 718dfac4-3256-4637-baa5-2164f07ce3c4 # Tarjetas de beneficios
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd2505a8-9648-4ee4-8e18-c91bfa410c53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6503d190-7f50-4eea-a3da-add6cd9b035d
+            userCondition: null
+          -
+            elementCondition: null
+            heading: 'Preguntas frecuentes'
+            type: craft\fieldlayoutelements\Heading
+            uid: 260d06e5-4ec6-4423-bbed-58d257b8b139
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 898074cc-a3e9-48c5-95c5-d7e3f427b28a # Preguntas frecuentes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bcab6ee4-803e-41b6-9b1b-0a2b9e6419cb
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Service Template'
+        uid: ec4036a2-a6e5-49bf-9906-6c19fcbd4af1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dd24062c-7b6f-4da2-9582-063c8d343ba8 # Meta title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 036ad12d-b5bd-4019-b68c-0f200fe7afc4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c244101-546b-4dfe-8cd5-9f464cf6fe03 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba81a01f-ca66-48ba-8955-16ea379c3843
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Meta Data'
+        uid: 9f7d96e6-03cb-42da-81d2-65621f092b3b
+        userCondition: null
 handle: services
 hasTitleField: true
 name: Servicios
 section: ae7929f0-e730-4538-8f63-5a6e530b541e # Servicios
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
