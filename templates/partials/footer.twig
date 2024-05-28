@@ -90,19 +90,20 @@
            </div>
            <div class="w-third-ns w-100">
                <div>
+                {% if companyInfo.pachucaAddress %}
                    <div class="pb4">
-                       <h3 class="f3 fw5 white-60">Sucursal Pachuca</h3>
+                       <h3 class="f3 fw5 white-60">Oficinas Pachuca</h3>
                        <p class="lh-copy f6">{{ companyInfo.pachucaAddress }}</p>
                        <a href="tel: {{ companyInfo.pachucaPhone }}" class="white no-underline inline-flex"> <i class="fas fa-phone-rotary"></i>  {{ companyInfo.pachucaPhone }}</a>
                    </div>
-                   {#
+                {% endif %}
+                   {% if companyInfo.qroAddress %}
                    <div>
-                       <a class="f3 fw5 white-60">Sucursal Tizayuca</h3>
-                       <p class="lh-copy f6">{{ companyInfo.tizayucaAddress }}</p>
-                       <a  href="tel:{{ companyInfo.tizayucaPhone }}" class="white no-underline inline-flex"> <i class="fas fa-phone-rotary"></i>  {{ companyInfo.tizayucaPhone }}</a>
+                       <a class="f3 fw5 white-60">Oficinas Querétaro</h3>
+                       <p class="lh-copy f6">{{ companyInfo.qroAddress }}</p>
+                       <a  href="tel:{{ companyInfo.qrophone }}" class="white no-underline inline-flex"> <i class="fas fa-phone-rotary"></i>  {{ companyInfo.qrophone }}</a>
                    </div>
-                   #}
-                  
+                   {% endif %}
                </div>
            </div>
        </div>
