@@ -26,75 +26,11 @@
 
     </main>
 
-    <section class="pv5-ns pv3 bg-near-white">
-        <div class="mwc center">
-            <div class="form-card bg-white pa4 br4 w-70-ns w-100 center">
-                <div class="flex flex-wrap">
-                    <div class="w-50-ns w-100 relative-ns">
-                        <div class="form-img-wrapper absolute-ns" style="left: -5rem;">
-                            <img class="w-70 br3 dib-ns dn" src="/images/contact-form.png" alt="">
-                        </div>
-                    </div>
-                    <div class="w-50-ns w-100">
-                        <div>
-                            <h2 class="f2 black-60 fw5 mv0 pv1"> Escríbenos</h2>
-                            <p class="lh-copy pv1 mv0">Si requieres más información déjanos un mensaje, lo atenderemos a la brevedad.</p>
-                        </div>
-                        <form action="">
-                            <div class="flex flex-wrap">
-                                <div class="w-50-ns w-100 mv2">
-                                    <input class="w-90 center ciesc-input" type="text" placeholder="Nombre">
-                                </div>
-                                <div class="w-50-ns w-100 mv2">
-                                    <input class="w-90 center ciesc-input" type="text" placeholder="Correo">
-                                </div>
-                                <div class="w-50-ns w-100 mv2">
-                                    <input class="w-90 center ciesc-input" type="text" placeholder="Empresa">
-                                </div>
-                                <div class="w-50-ns w-100 mv2">
-                                    <input class="w-90 center ciesc-input" type="text" placeholder="Teléfono">
-                                </div>
-                                <div class="w-100 mv2">
-                                    <input class="w-90 center ciesc-input" type="text" placeholder="Giro de la empresa">
-                                </div>
-                                <div class="w-100 mv2">
-                                    <textarea class="w-90 center ciesc-input" name="" id="" cols="30" rows="5"></textarea>
-                                </div>
-                                 <button class="prim-btn b--transparent ph4 pv3 br2" type="submit">Enviar mensaje</button>
+    {% include 'partials/_contact-section' %}
 
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="pv5-ns pv3 tc">
-        <div class="mwc center ph3">
-            <div>
-                <h2>Nuestras direcciones</h2>
-                
-            </div>
-            <div class="flex flex-wrap">
-                <div class="w-50-ns w-100">
-                    <div class="w-60-ns center tc">
-                        <h2>Dirección Sucursal Pachuca</h2>
-                        <p class="lh-copy">{{ companyInfo.pachucaAddress }}</p>
-                        <a class="prim-btn ph4 pv3 br2 inline-flex" href="tel:{{ companyInfo.pachucaPhone }}">Marcar al: {{ companyInfo.pachucaPhone }}</a>
-                    </div>
-                </div>
-                {#
-                <div class="w-50-ns w-100">
-                    <div class="w-60-ns center tc">
-                        <h2>Dirección Sucursal Tizayuca</h2>
-                        <p class="lh-copy">{{ companyInfo.tizayucaAddress }}</p>
-                        <a class="prim-btn ph4 pv3 br2 inline-flex" href="tel:{{ companyInfo.tizayucaPhone }}">Marcar al: {{ companyInfo.tizayucaPhone }}</a>
-                    </div>#}
-                </div>
-            </div>
-        </div>
-    </section>
+
+
     {% include 'partials/footer' %}
 
 {% endblock %}
