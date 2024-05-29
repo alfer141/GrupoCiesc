@@ -1,0 +1,14 @@
+columnSuffix: gymyjncq
+contentColumnType: boolean
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: newVersion
+instructions: null
+name: 'Cambiar a la nueva versión'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,7 +1,7 @@
 columnSuffix: fhweumvq
 contentColumnType: text
 fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
-handle: Subtitle
+handle: subtitle
 instructions: '(H2) en la sección principal del Servicio debajo del nombre del servicio'
 name: Subtítulo
 searchable: true

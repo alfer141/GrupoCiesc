@@ -11,7 +11,162 @@
 {% endblock %}
 
 {% block content %}
-   
+
+{%  set mainImage = entry.mainServiceImage.one() %}              
+
+{% if entry.newVersion %}
+
+    <main class="service_tmp_main" style="background-color: #1A263E;">
+        {% include 'partials/nav' %}
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap pv5-ns pv4">
+                <div class="w-50-ns w-100 mt3">
+                    <h1 class="f5 fw5 white mb3 pb0">{{ entry.title }}</h1>
+                    <h2 class="f1 white lh-solid mt0 pt0 mb3">{{ entry.subtitle }}</h2>
+                    <p class="lh-copy white">{{ entry.description }}</p>
+                    <a class="prim-btn pv3 ph3 br2 dib" href="{{url('contacto')}}">Agenda tu asesoría</a>
+                </div>
+                <div class="w-50-ns w-100">
+                    <div class="serviceMain_imageWrapper">
+                        <img src="{{ mainImage.url() }}" alt="Service  title" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <section class="pt3">
+        <div class="mwc center ph3">
+            <div class="w-60-ns w-100 center tc">
+                    <h3 class="fw5 f2 lh-title">Grandes y pequeñas empresas que han confiado con nosotros</h3>
+                </div>
+                <div class="w-70-ns w-100  pv2">
+                    {% set customers = craft.entries()
+                        .section('customers')
+                        .with(['logo'])
+                        .all()
+                    %}
+                    <div class="slider flex items-center  pv4">
+                        <div class="slide-track items-center pv5">
+                        {% for customer in customers %}
+                        {% set image = customer.logo[0] ?? null %}
+                            <div class="slide">
+                                <img class="w-100 center mh4" alt="{{ customer.title }}" src="{{ image.url() }}" />
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="pb5-ns pt2 pv3">
+        <div class="mwc center ph3">
+            <div>
+                <h2 class="f1 tracked-tight lh-solid w-100">{{ entry.aboutServiceTitle }}</h2>
+                <p class="lh-copy">{{entry.aboutServiceDescription }}</p>
+            </div>
+            {% set matrixTab = entry.aboutserviceTab.all() %}
+            {% set firstTab = entry.aboutserviceTab.one() %}
+
+            <div class="flex flex-wrap mt4 pv2"  x-data="{ openTab: '{{ firstTab.tabTitle }}' }">
+                <div class="w-30-ns w-100">
+                    <ul class="list pl0 dib-ns flex flex-nowrap justify-start overflow-x-scroll overflow-auto-ns">
+                    {% for tab in matrixTab %}
+                        <li class="pv2 ph4 mb3  dib br3 pointer flex items-center" :class="{ 'bg-light-gray': openTab === '{{ tab.tabTitle }}' }">
+                            <button class="serv_openTab_btn" @click="openTab = '{{ tab.tabTitle }}'">
+                                <i class="fa-regular fa-store"></i> {{ tab.tabTitle }}
+                            </button> 
+                         </li>
+                    {% endfor %}
+
+                    </ul>
+                </div>
+                <div class="w-70-ns w-100">
+                {% for tab in  matrixTab %}
+                {% set tabImage = tab.tabImage.one() %}
+                    <div x-show="openTab === '{{ tab.tabTitle }}' " x-transition>
+                        <p class="lh-copy mb3">{{ tab.tabDescription }}</p>
+                        <div class="serviceTarget_imageWrapper">
+                            <img src="{{ tabImage.url()}}" alt="" />
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pv5-ns pv4" style="background-color: #F5E9E5;">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap items-center">
+                <div class="w-50-ns pr3-ns">
+                    <h2 class="ttu prim-color f5 fw6">{{ entry.benefitsTitle }}</h2>
+                    <h3 class="f1 mt0 pt0 lh-solid tracked-tight">{{ entry.benefitsSubtitle }}</h3>
+                </div>
+                <div class="w-40-ns">
+                    <p>Permítenos ser parte de tu equipo a través de nuestro servicio de {{ entry.title }}</p>
+                </div>
+            </div>
+            {% set matrixBenefits = entry.benefitsCards.all() %}
+
+            <div class="flex flex-wrap">
+            {% for card in matrixBenefits %}
+                <div class="w-third-ns w-100 mb0-ns mb3">
+                    <div class="w-90 center bg-white pa4 br3">
+                        <div class="w2 h2 br2 prim-bg flex items-center justify-center">
+                            <i class="{{ card.benefitIcon }} white w-70"></i>
+                        </div>
+                        <h3 class="f3">{{ card.benefitTitle }}</h3>
+                        <p class="lh-copy">{{ card.benefitDescription }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'partials/_contact-section' %}
+
+    <section class="service_tmp_faq pv5-ns pv4">
+        <div class="mwc center ph3">
+            <div class="flex flex-wrap">
+                <div class="w-50-ns w-100">
+                    <div class="w-60-ns w-100">
+                        <h2 class="f1 lh-solid mb2 tracked-tight">Preguntas frecuentes</h2>
+                        <p class="lh-copy mt0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quae cum essent dicta, discessimus. </p>
+                        <a class="prim-color dib" href="mailto:contacto@grupociesc.com" target="_blank">contacto@grupociesc.com</a>
+                    </div>
+
+                </div>
+                {% set faq = entry.FAQ.all() %}
+                <div class="w-50-ns w-100 mt0-ns mt4" x-data="{ openFaq: null }">
+                {% for faq in faq %}
+
+                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '{{ loop.index }}' ? null : '{{ loop.index }}'">
+                        <div class="faq_question flex flex-wrap items-center justify-between">
+                            <h3>{{ faq.question }}</h3>
+                            <i :class="{'fas fa-minus': openFaq === '{{ loop.index }}', 'fas fa-plus': openFaq !== '{{ loop.index }}'}" class="f3"></i>
+                        </div>
+                        <div class="faq_answer" x-show="openFaq === '{{ loop.index }}'" x-transition>
+                            <div class="lh-copy ckEditor">
+                                {{ faq.answer }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% else %}
     {% set cover = entry.cover.one() %}
     
     <main class="service-detail-main pb5 h-100 relative" style="background-image: url({{cover.url}});">
@@ -72,5 +227,9 @@
     </section>
 
 
-    {% include 'partials/footer'%}
+{% endif %}
+
+
+
+{% include 'partials/footer'%}
 {% endblock %}
