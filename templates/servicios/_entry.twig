@@ -3,8 +3,8 @@
 {% block metas %}
 
     <meta content="{{ entry.title }} | {{ siteName }}" property="og:title"/>
-    <meta content="" name="description">
-    <meta content="" property="og:description">
+    <meta content="{{ entry.metaDescription }}" name="description">
+    <meta content="{{ entry.metaDescription }}" property="og:description">
     <meta property="og:image" content="/images/og-image.png">
 	<meta property="og:url" content="{{siteUrl}}">
 	<meta name="twitter:card" content="summary_large_image"/>
@@ -164,8 +164,6 @@
         </div>
     </section>
 
-
-
 {% else %}
     {% set cover = entry.cover.one() %}
     
@@ -225,7 +223,6 @@
 
         </div>
     </section>
-
 
 {% endif %}
 
