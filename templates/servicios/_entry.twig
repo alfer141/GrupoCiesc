@@ -97,7 +97,9 @@
             </div>
         </div>
     </section>
+    {% set matrixBenefits = entry.benefitsCards.all() %}
 
+    {% if matrixBenefits | length %}
     <section class="pv5-ns pv4" style="background-color: #F5E9E5;">
         <div class="mwc center ph3">
             <div class="flex flex-wrap items-center">
@@ -109,7 +111,7 @@
                     <p>Permítenos ser parte de tu equipo a través de nuestro servicio de {{ entry.title }}</p>
                 </div>
             </div>
-            {% set matrixBenefits = entry.benefitsCards.all() %}
+            
 
             <div class="flex flex-wrap">
             {% for card in matrixBenefits %}
@@ -127,42 +129,46 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
 
     {% include 'partials/_contact-section' %}
+    {% set faq = entry.FAQ.all() %}
 
-    <section class="service_tmp_faq pv5-ns pv4">
-        <div class="mwc center ph3">
-            <div class="flex flex-wrap">
-                <div class="w-50-ns w-100">
-                    <div class="w-60-ns w-100">
-                        <h2 class="f1 lh-solid mb2 tracked-tight">Preguntas frecuentes</h2>
-                        <p class="lh-copy mt0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quae cum essent dicta, discessimus. </p>
-                        <a class="prim-color dib" href="mailto:contacto@grupociesc.com" target="_blank">contacto@grupociesc.com</a>
-                    </div>
-
-                </div>
-                {% set faq = entry.FAQ.all() %}
-                <div class="w-50-ns w-100 mt0-ns mt4" x-data="{ openFaq: null }">
-                {% for faq in faq %}
-
-                    <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '{{ loop.index }}' ? null : '{{ loop.index }}'">
-                        <div class="faq_question flex flex-wrap items-center justify-between">
-                            <h3>{{ faq.question }}</h3>
-                            <i :class="{'fas fa-minus': openFaq === '{{ loop.index }}', 'fas fa-plus': openFaq !== '{{ loop.index }}'}" class="f3"></i>
+    {% if faq | length %}
+        <section class="service_tmp_faq pv5-ns pv4">
+            <div class="mwc center ph3">
+                <div class="flex flex-wrap">
+                    <div class="w-50-ns w-100">
+                        <div class="w-60-ns w-100">
+                            <h2 class="f1 lh-solid mb2 tracked-tight">Preguntas frecuentes</h2>
+                            <p class="lh-copy mt0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quae cum essent dicta, discessimus. </p>
+                            <a class="prim-color dib" href="mailto:contacto@grupociesc.com" target="_blank">contacto@grupociesc.com</a>
                         </div>
-                        <div class="faq_answer" x-show="openFaq === '{{ loop.index }}'" x-transition>
-                            <div class="lh-copy ckEditor">
-                                {{ faq.answer }}
+
+                    </div>
+                    
+                    <div class="w-50-ns w-100 mt0-ns mt4" x-data="{ openFaq: null }">
+                    {% for faq in faq %}
+
+                        <div class="bg-white pv3 ph4 br3 pointer mb4"  @click="openFaq = openFaq === '{{ loop.index }}' ? null : '{{ loop.index }}'">
+                            <div class="faq_question flex flex-wrap items-center justify-between">
+                                <h3>{{ faq.question }}</h3>
+                                <i :class="{'fas fa-minus': openFaq === '{{ loop.index }}', 'fas fa-plus': openFaq !== '{{ loop.index }}'}" class="f3"></i>
+                            </div>
+                            <div class="faq_answer" x-show="openFaq === '{{ loop.index }}'" x-transition>
+                                <div class="lh-copy ckEditor">
+                                    {{ faq.answer }}
+                                </div>
                             </div>
                         </div>
+                    {% endfor %}
                     </div>
-                {% endfor %}
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    {% endif %}
 
 {% else %}
     {% set cover = entry.cover.one() %}
