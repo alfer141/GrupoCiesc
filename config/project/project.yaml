@@ -1,4 +1,4 @@
-dateModified: 1717430501
+dateModified: 1717432541
 email:
   fromEmail: hola@ofeliaexperience.com
   fromName: 'Grupo Ciesc'
@@ -98,7 +98,7 @@ plugins:
       prependSender: 'A nombre de'
       prependSubject: 'New message from Grupo Ciesc'
       successFlashMessage: 'Su mensaje ha sido enviado.'
-      toEmail: alfer2506@gmail.com
+      toEmail: 'alfer2506@gmail.com, legal@grupociesc.com'
   feed-me:
     edition: standard
     enabled: true
