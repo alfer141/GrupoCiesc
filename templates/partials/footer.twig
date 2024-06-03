@@ -72,7 +72,9 @@
                    </div>
                    <div class="mv3">
                        <h3 class="f3 fw5 white-60">Correos</h3>
-                       <a class="no-underline white f5" href="mailto:{{ companyInfo.email }}"><i class="fas fa-envelope"></i> {{ companyInfo.email }}</a>
+                        <a class="no-underline white f5 mb3 db" href="mailto:{{ companyInfo.email }}"><i class="fas fa-envelope"></i> {{ companyInfo.email }}</a>
+                        <a class="no-underline white f5 mb3 db" href="mailto:{{ companyInfo.secondaryEmail }}"><i class="fas fa-envelope"></i> {{ companyInfo.secondaryEmail }}</a>
+
                    </div>
                </div>
            </div>
@@ -110,8 +112,9 @@
        <div class="social-footer">
            <h3 class="f3 fw5 white-60 tc">Nuestras Redes</h3>
            <div class="flex justify-center">
-               <div class="ph3"><a class="white-60 hover-white f2" href="{{ companyInfo.facebook }}"><i class="fab fa-facebook-square"></i></a></div>
-               <div class="ph3"><a class="white-60 hover-white f2"  href="{{ companyInfo.linkedin }}"><i class="fab fa-linkedin"></i></a></div>
+               <div class="ph3"><a class="white-60 hover-white f2" href="{{ companyInfo.facebook }}" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+               <div class="ph3"><a class="white-60 hover-white f2"  href="{{ companyInfo.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                <div class="ph3"><a class="white-60 hover-white f2"  href="{{ companyInfo.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a></div>
            </div>
        </div>
        <div class="copyright tc">

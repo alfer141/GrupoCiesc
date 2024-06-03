@@ -1,0 +1,19 @@
+columnSuffix: frojauzk
+contentColumnType: text
+fieldGroup: 16777690-1a83-4a23-aaf2-5138b7d2617e # Blog
+handle: instagram
+instructions: null
+name: Instagram
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
