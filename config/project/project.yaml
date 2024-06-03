@@ -1,6 +1,6 @@
-dateModified: 1717432702
+dateModified: 1717433044
 email:
-  fromEmail: hola@ofeliaexperience.com
+  fromEmail: legal@grupociesc.com
   fromName: 'Grupo Ciesc'
   replyToEmail: null
   template: null
@@ -96,7 +96,7 @@ plugins:
       allowAttachments: ''
       allowedMessageFields: null
       prependSender: 'A nombre de'
-      prependSubject: 'New message from Grupo Ciesc'
+      prependSubject: 'Nuevo mensaje del sitio web Grupo Ciesc'
       successFlashMessage: 'Su mensaje ha sido enviado.'
       toEmail: 'alfer2506@gmail.com, legal@grupociesc.com, ofeliaexperience@gmail.com'
   feed-me:
