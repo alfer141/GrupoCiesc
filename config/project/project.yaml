@@ -1,4 +1,4 @@
-dateModified: 1717433044
+dateModified: 1717433110
 email:
   fromEmail: legal@grupociesc.com
   fromName: 'Grupo Ciesc'
@@ -98,7 +98,7 @@ plugins:
       prependSender: 'A nombre de'
       prependSubject: 'Nuevo mensaje del sitio web Grupo Ciesc'
       successFlashMessage: 'Su mensaje ha sido enviado.'
-      toEmail: 'alfer2506@gmail.com, legal@grupociesc.com, ofeliaexperience@gmail.com'
+      toEmail: ofeliaexperience@gmail.com
   feed-me:
     edition: standard
     enabled: true
