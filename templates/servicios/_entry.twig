@@ -75,7 +75,7 @@
                     <ul class="list pl0 dib-ns flex flex-nowrap justify-start overflow-x-scroll overflow-auto-ns">
                     {% for tab in matrixTab %}
                         <li class="pv2 ph4 mb3  dib br3 pointer flex items-center" :class="{ 'bg-light-gray': openTab === '{{ tab.tabTitle }}' }">
-                            <button class="serv_openTab_btn" @click="openTab = '{{ tab.tabTitle }}'">
+                            <button class="serv_openTab_btn tl" @click="openTab = '{{ tab.tabTitle }}'">
                                 <i class="fa-regular fa-store"></i> {{ tab.tabTitle }}
                             </button> 
                          </li>
