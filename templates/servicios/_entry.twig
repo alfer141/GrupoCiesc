@@ -71,7 +71,7 @@
             {% set firstTab = entry.aboutserviceTab.one() %}
 
             <div class="flex flex-wrap mt4 pv2"  x-data="{ openTab: '{{ firstTab.tabTitle }}' }">
-                <div class="w-30-ns w-100">
+                <div class="w-30-ns w-100 pr3-ns">
                     <ul class="list pl0 dib-ns flex flex-nowrap justify-start overflow-x-scroll overflow-auto-ns">
                     {% for tab in matrixTab %}
                         <li class="pv2 ph4 mb3  dib br3 pointer flex items-center" :class="{ 'bg-light-gray': openTab === '{{ tab.tabTitle }}' }">
@@ -115,7 +115,7 @@
 
             <div class="flex flex-wrap">
             {% for card in matrixBenefits %}
-                <div class="w-third-ns w-100 mb0-ns mb3 flex flex-auto">
+                <div class="w-third-ns w-100 mb3 flex flex-auto">
                     <div class="w-90 center bg-white pa4 br3">
                         <div class="w2 h2 br2 prim-bg flex items-center justify-center">
                             <i class="{{ card.benefitIcon }} white w-70"></i>
