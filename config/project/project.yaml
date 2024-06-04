@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 dateModified: 1717434078
+=======
+dateModified: 1717434205
+>>>>>>> f67868e (--YAML--)
 email:
   fromEmail: legal@grupociesc.com
   fromName: 'Grupo Ciesc'
@@ -22,12 +26,17 @@ meta:
     0ece2177-ba14-462f-9efe-82a142766c2e: Subtítulo # Subtítulo
     1fbf6371-1871-4eb1-85a2-532ba65a9ece: 'Datos de la empresa' # Datos de la empresa
     2f7a52fb-ecc7-4102-b37f-07c1e3141a2b: 'Fragmento del servicio' # Fragmento del servicio
+    3a53e4c7-95b5-411e-b1e2-8420435fa597: 'Título: Beneficios' # Título: Beneficios
     3b094a3b-b91d-4668-931f-44fa022c2be6: 'Imagen del artículo' # Imagen del artículo
     3c0e1e4e-7598-4723-9566-831a3692dc3e: 'Dirección Pachuca' # Dirección Pachuca
     3ced8099-e3b2-4e80-9514-74afbb899fa2: Respuesta # Respuesta
+    4a14f896-a524-4602-bcb7-60a0319aa228: 'Título: Acerca del servicio' # Título: Acerca del servicio
     4b932bdd-e388-4934-9252-b2bd49692bd2: Logotipo # Logotipo
     4c7e917b-d143-45e1-9647-ec7c7c5ca0b2: Instagram # Instagram
+    5d03a283-b83c-44f8-8080-0a0e484b1449: Icono # Icono
+    5e42d40c-020c-4ac6-ae80-3864062ed28c: 'Título del Beneficio' # Título del Beneficio
     006fbfdc-6b86-4dc3-b898-a9b30cd5a062: 'Dirección Querétaro' # Dirección Querétaro
+    7cce87c9-b7ff-47ca-ac46-71bd8056e92c: Pregunta # Pregunta
     7d0e2044-bdde-4103-b287-befbcf056b1a: Autor # Autor
     7d8cb225-2b9c-482e-8d7b-5ae2e194cb14: 'Descripción del beneficio' # Descripción del beneficio
     7ea02965-8095-44b1-81ce-0282a9387fe3: 'Grupo Ciesc' # Grupo Ciesc
@@ -35,6 +44,7 @@ meta:
     8afed7eb-1945-4be8-9ca1-0985bbd79418: 'Cuerpo del artículo' # Cuerpo del artículo
     8bb59c3e-d540-4254-8f4a-c4af6c5abdb5: Linkedin # Linkedin
     8c2e8c35-2256-46df-b354-7c44efa39dfa: 'Fragmento del post' # Fragmento del post
+    8e0f6bdc-5ca0-40a1-8ac8-cc22673505d9: 'Imagen del tab' # Imagen del tab
     9e660280-513c-453a-838e-ca9453c9a215: 'Link de la empresa' # Link de la empresa
     9f12f92b-d3c9-433e-b204-5ce21c95d573: 'Teléfono Pachuca' # Teléfono Pachuca
     19f32506-7666-4c44-a94d-7b717cb28596: Blog # Blog
@@ -45,6 +55,7 @@ meta:
     43f226eb-8874-48e8-ac5f-222fbc3ca738: Facebook # Facebook
     50dadc77-662b-4c96-8999-8356ec4d4481: 'Imagen del servicio' # Imagen del servicio
     59f88c28-2ca4-4e0e-bb7a-fc72764b6c62: 'Tarjeta de Beneficio' # Tarjeta de Beneficio
+    69e70831-a754-4b6e-9819-43eb5fefbb6f: Descripción # Descripción
     80e8862c-84df-43cc-8e17-1e1a790868ec: 'Service Tab' # Service Tab
     87d4739a-ad6c-42ab-8e67-529a715a801e: 'Título del Beneficio' # Título del Beneficio
     90aa8e95-25e1-4c20-9526-31059ff11407: 'New Services Model' # New Services Model
@@ -53,33 +64,49 @@ meta:
     260f6dc2-9a2c-4648-bd5a-d19e61f9d989: 'Q&A' # Q&A
     332c3322-a2f6-44b8-a66b-22cadcf0d1c1: 'Public Schema' # Public Schema
     366fe78c-c06c-49b9-b5a6-cb88a0d35c0e: Clientes # Clientes
+    478c88c5-5de0-4ea2-8758-00cea494f8bc: 'Imagen Principal' # Imagen Principal
+    523addcc-f102-4bfa-9753-5ce53fb324b0: 'Subtítulo: Beneficios' # Subtítulo: Beneficios
+    0615c1ca-0a88-4839-8ae8-b15363270d5e: 'Descripción del Tab' # Descripción del Tab
     718dfac4-3256-4637-baa5-2164f07ce3c4: 'Tarjetas de beneficios' # Tarjetas de beneficios
     744a7203-a639-40fe-a5cd-d23d032fb15d: 'Subtítulo: Beneficios' # Subtítulo: Beneficios
     906fe59e-3943-4e90-b057-95f4e3a79332: 'Imagen del tab' # Imagen del tab
     964c97bb-a9cc-4e56-9fea-cf94cd23bd3f: 'Imágenes públicas' # Imágenes públicas
+    988b5bc9-06c3-4b31-9b24-34b038cd1fe6: 'Tarjeta de Beneficio' # Tarjeta de Beneficio
+    2942ad1c-d1db-4bd3-aa2c-a1a7332e77e9: Subtítulo # Subtítulo
     4829c239-36d6-46df-a820-34cc6e878e7c: 'Título: Acerca del servicio' # Título: Acerca del servicio
+    8406b862-67a1-4ca8-91be-64fb3c4c4e6f: 'Título del Tab' # Título del Tab
     88125bde-16f5-4673-b1a6-d1ba8f34962d: Clientes # Clientes
+    127060dd-2b92-43d9-b46b-f77842e24ed4: 'Descripción: Acerca del Servicio' # Descripción: Acerca del Servicio
     730019ca-63b1-4a2a-81f3-d79a33a288d3: 'Tab: About Service' # Tab: About Service
     867287f4-0358-4ee1-a33d-3c56fb44f327: Clientes # Clientes
     898074cc-a3e9-48c5-95c5-d7e3f427b28a: 'Preguntas frecuentes' # Preguntas frecuentes
     16777690-1a83-4a23-aaf2-5138b7d2617e: Blog # Blog
+    aa60f24d-48f1-4923-baa0-d3205060410c: 'Descripción del beneficio' # Descripción del beneficio
     ae7929f0-e730-4538-8f63-5a6e530b541e: Servicios # Servicios
     b0568e7a-3e32-4145-82cd-67b09eacf53e: 'Teléfono Tizayuca' # Teléfono Tizayuca
+    b638b30c-818b-4e77-89f6-c7070c6d997d: 'Service Tab' # Service Tab
+    b443811b-8d89-493d-81f5-75b3d1e472ff: 'Preguntas frecuentes' # Preguntas frecuentes
     ba888375-fe91-495d-af9a-291201c2cbd1: 'Global WhatsApp' # Global WhatsApp
     c0c63f7a-3c61-44b9-b60c-60a02d4526e0: 'Cambiar a la nueva versión' # Cambiar a la nueva versión
     c44e1865-5d0a-429d-be51-84af5e860f1a: Servicios # Servicios
     c6649a02-dc73-41bf-9496-2d6ffb97d502: Blog # Blog
+    ca96867a-0ccd-4f8f-93ad-7a0506a36f04: Respuesta # Respuesta
     cccfdd68-ad26-438f-92b2-739904b918c9: 'Descripción: Acerca del Servicio' # Descripción: Acerca del Servicio
     ceb3601c-885e-44ea-88c5-b009d7f78fb0: Descripción # Descripción
+    d9fd4c5d-4b00-4f2b-91fb-852e8af08565: 'Q&A' # Q&A
     d1398a7c-0948-4f81-865e-12fe57fd7199: Pregunta # Pregunta
     d62075cc-d1e9-4912-a09e-41e798c6466b: 'Datos de la empresa' # Datos de la empresa
     dd0ff666-90cf-4a9e-9a1d-426bf936caba: 'Imagen Principal' # Imagen Principal
     dd24062c-7b6f-4da2-9582-063c8d343ba8: 'Meta title' # Meta title
     e0e1d402-f807-4daa-b61d-14470180a90d: Portada # Portada
+    e31d1675-391d-4552-b0ac-3efccabf46de: 'New Services Model' # New Services Model
     e52eea9d-e54c-463e-a654-1fa6e5cf25a5: Common # Common
     e89be7fb-054e-4159-a360-c0c9faa4efbe: 'Grupo Ciesc' # Grupo Ciesc
+    e585b73f-869b-4ec9-beb2-ecca4f39a251: 'Tarjetas de beneficios' # Tarjetas de beneficios
     e641dec4-cfc8-4b3e-8437-68efeb6a0075: 'Título: Beneficios' # Título: Beneficios
+    edc69deb-1abe-4abd-b622-6b19e57f45af: 'Meta Title' # Meta Title
     f8d4d697-6246-4269-bd95-429ae9eec14f: 'Icono ' # Icono 
+    f24fed30-b35c-4fad-b27d-57d0a8c86489: 'Tab: About Service' # Tab: About Service
     f4832466-aec3-460d-875a-e0295b369b56: Servicios # Servicios
     fe51675c-165a-43b1-a367-0e28d4c642d5: qroPhone # qroPhone
     ff0ed6db-0124-45b3-aa76-69914ea4ee79: 'Categoría del articulo' # Categoría del articulo
@@ -98,7 +125,11 @@ plugins:
       prependSender: 'A nombre de'
       prependSubject: 'Nuevo mensaje del sitio web Grupo Ciesc'
       successFlashMessage: 'Su mensaje ha sido enviado.'
+<<<<<<< HEAD
       toEmail: 'alfer2506, legal@grupociesc.com'
+=======
+      toEmail: 'alfer2506@gmail.com, legal@grupociesc.com'
+>>>>>>> f67868e (--YAML--)
   feed-me:
     edition: standard
     enabled: true
