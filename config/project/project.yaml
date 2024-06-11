@@ -1,11 +1,11 @@
-dateModified: 1717433110
+dateModified: 1717434078
 email:
   fromEmail: legal@grupociesc.com
   fromName: 'Grupo Ciesc'
-  replyToEmail: null
+  replyToEmail: legal@grupociesc.com
   template: null
   transportSettings:
-    apiKey: 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
+    apiKey: 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
     categories: ''
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:
@@ -98,7 +98,7 @@ plugins:
       prependSender: 'A nombre de'
       prependSubject: 'Nuevo mensaje del sitio web Grupo Ciesc'
       successFlashMessage: 'Su mensaje ha sido enviado.'
-      toEmail: ofeliaexperience@gmail.com
+      toEmail: 'alfer2506, legal@grupociesc.com'
   feed-me:
     edition: standard
     enabled: true
