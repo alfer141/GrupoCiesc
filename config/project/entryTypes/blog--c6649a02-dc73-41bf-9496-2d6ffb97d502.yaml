@@ -2,6 +2,7 @@ fieldLayouts:
   a5eecf5f-cef2-455a-bc77-dad42f2fb7ba:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,59 +27,80 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 294b2755-d82f-4dcb-b51c-3ba325ee47ef
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7d0e2044-bdde-4103-b287-befbcf056b1a # Autor
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: dee0be58-ac71-4b14-94bb-cbd1524b7e60
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0c244101-546b-4dfe-8cd5-9f464cf6fe03 # Meta Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 998951e2-8ce9-4d6e-b6f4-83475cf4490f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 3b094a3b-b91d-4668-931f-44fa022c2be6 # Imagen del artículo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 24225851-260a-4d93-bf3d-b96aca2afc30
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8c2e8c35-2256-46df-b354-7c44efa39dfa # Fragmento del post
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2da0e1c7-9953-44c0-8861-03d32a118563
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8afed7eb-1945-4be8-9ca1-0985bbd79418 # Cuerpo del artículo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ec94d7ee-f4a3-4553-ac15-a70651563748
+            userCondition: null
             warning: null
             width: 100
         name: Contenido
-        sortOrder: 1
+        uid: 005bc5c2-049d-4830-9c9f-987ded505a53
+        userCondition: null
 handle: blog
 hasTitleField: true
 name: Blog
 section: 19f32506-7666-4c44-a94d-7b717cb28596 # Blog
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

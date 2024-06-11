@@ -2,16 +2,16 @@ columnSuffix: raktjibq
 contentColumnType: text
 fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece # Datos de la empresa
 handle: qrophone
-instructions: ''
+instructions: null
 name: qroPhone
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

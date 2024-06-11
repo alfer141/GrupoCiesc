@@ -2,16 +2,16 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 16777690-1a83-4a23-aaf2-5138b7d2617e # Blog
 handle: fragment
-instructions: ''
+instructions: null
 name: 'Fragmento del post'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -3,6 +3,7 @@ fieldLayouts:
   5e442377-9df6-4774-bf21-f804f0be048b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,7 +11,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -25,10 +28,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 083872a8-c61a-49cb-8dce-a36806347e7a
+            userCondition: null
             warning: null
             width: 100
         name: Contenido
-        sortOrder: 1
+        uid: f80bea67-3177-4bc4-bd72-041652468fae
+        userCondition: null
 handle: postCategory
 name: 'Categoría del articulo'
 siteSettings:

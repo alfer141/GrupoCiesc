@@ -2,12 +2,11 @@ columnSuffix: null
 contentColumnType: string(255)
 fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece # Datos de la empresa
 handle: facebook
-instructions: ''
+instructions: null
 name: Facebook
 searchable: false
 settings:
-  maxLength: '255'
-  placeholder: ''
+  maxLength: 255
   types:
     - url
 translationKeyFormat: null

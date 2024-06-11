@@ -2,16 +2,16 @@ columnSuffix: hnybgsmi
 contentColumnType: text
 fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece # Datos de la empresa
 handle: qroAddress
-instructions: ''
+instructions: null
 name: 'Dirección Querétaro'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

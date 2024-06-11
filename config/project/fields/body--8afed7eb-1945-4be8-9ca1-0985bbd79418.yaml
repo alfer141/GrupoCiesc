@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 16777690-1a83-4a23-aaf2-5138b7d2617e # Blog
 handle: body
-instructions: ''
+instructions: null
 name: 'Cuerpo del artículo'
 searchable: true
 settings:
@@ -10,14 +10,14 @@ settings:
   availableVolumes: '*'
   ckeConfig: 99d06683-b4dc-4996-af1e-a55db9b88f75 # Simple
   columnType: text
-  defaultTransform: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showUnpermittedFiles: ''
-  showUnpermittedVolumes: ''
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

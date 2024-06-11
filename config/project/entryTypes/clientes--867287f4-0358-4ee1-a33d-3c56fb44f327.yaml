@@ -2,6 +2,7 @@ fieldLayouts:
   5eb3b219-293f-4462-bb06-32b6715a6ba1:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,32 +27,44 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2332004f-7cf6-4d7f-9f76-9992b012d1a9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 4b932bdd-e388-4934-9252-b2bd49692bd2 # Logotipo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 24eeb01b-0f93-46a0-9ab9-0de741237d80
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9e660280-513c-453a-838e-ca9453c9a215 # Link de la empresa
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fc84ca37-a996-40d6-a057-f196b05d54c7
+            userCondition: null
             warning: null
             width: 100
         name: Contenido
-        sortOrder: 1
+        uid: 4fe820eb-1fbb-4161-ae5d-d4e34d7ba17d
+        userCondition: null
 handle: clientes
 hasTitleField: true
 name: Clientes
 section: 88125bde-16f5-4673-b1a6-d1ba8f34962d # Clientes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

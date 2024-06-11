@@ -2,12 +2,11 @@ columnSuffix: null
 contentColumnType: string(255)
 fieldGroup: 366fe78c-c06c-49b9-b5a6-cb88a0d35c0e # Clientes
 handle: companyLink
-instructions: ''
+instructions: null
 name: 'Link de la empresa'
 searchable: false
 settings:
-  maxLength: '255'
-  placeholder: ''
+  maxLength: 255
   types:
     - url
 translationKeyFormat: null

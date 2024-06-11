@@ -1,10 +1,10 @@
-columnSuffix: null
+columnSuffix: fhweumvq
 contentColumnType: text
-fieldGroup: 1fbf6371-1871-4eb1-85a2-532ba65a9ece # Datos de la empresa
-handle: tizayucaPhone
-instructions: null
-name: 'Teléfono Tizayuca'
-searchable: false
+fieldGroup: 90aa8e95-25e1-4c20-9526-31059ff11407 # New Services Model
+handle: subtitle
+instructions: '(H2) en la sección principal del Servicio debajo del nombre del servicio'
+name: Subtítulo
+searchable: true
 settings:
   byteLimit: null
   charLimit: null

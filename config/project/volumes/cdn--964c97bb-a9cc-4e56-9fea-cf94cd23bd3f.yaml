@@ -2,6 +2,7 @@ fieldLayouts:
   c34b6490-3881-4fbd-917b-6004d8876eae:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,15 +27,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 6b701b3c-cba1-42fd-8d6d-43480f918a38
+            userCondition: null
             warning: null
             width: 100
         name: Contenido
-        sortOrder: 1
+        uid: 57095ea3-da39-4a2f-b22d-2737b4381b7e
+        userCondition: null
 fs: cdn
 handle: cdn
-hasUrls: true
 name: 'Imágenes públicas'
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-url: '@web/assets/images/public_images'
+transformFs: null
+transformSubpath: ''
