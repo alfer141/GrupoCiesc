@@ -7,6 +7,7 @@ body{
 p{
     color: #696771;
 }
+
 hr{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -355,10 +356,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ff5
     border-radius: 1.5rem;
 }
 .service_tmp_main{
-    background-image: url('/images/service_tmp_bg.webp');
+    background-image: url('/images/services_temp/BG_radial.png');
+    background-blend-mode: multiply;
     background-image: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 .serv_openTab_btn{
     background-color: transparent;

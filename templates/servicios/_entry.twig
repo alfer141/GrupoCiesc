@@ -16,13 +16,13 @@
 
 {% if entry.newVersion %}
 
-    <main class="service_tmp_main" style="background-color: #1A263E;">
+    <main class="service_tmp_main" style="background-color: {{ entry.backgroundColor }};">
         {% include 'partials/nav' %}
         <div class="mwc center ph3">
             <div class="flex flex-wrap pv5-ns pv4">
                 <div class="w-50-ns w-100 mt3">
-                    <h1 class="f5 fw5 white mb3 pb0">{{ entry.title }}</h1>
-                    <h2 class="f1 white lh-solid mt0 pt0 mb3">{{ entry.subtitle }}</h2>
+                    <h1 class="f1 fw5 white mb3 pb0">{{ entry.title }}</h1>
+                    <h2 class="f5 white lh-solid mt0 pt0 mb3">{{ entry.subtitle }}</h2>
                     <p class="lh-copy white">{{ entry.description }}</p>
                     <a class="prim-btn pv3 ph3 br2 dib" href="{{url('contacto')}}">Agenda tu asesoría</a>
                 </div>
