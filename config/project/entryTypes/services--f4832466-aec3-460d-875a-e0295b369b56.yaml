@@ -99,6 +99,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 13cd70c0-77a3-47a4-9bb4-5eb0e11fd7a7 # Background color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 085b76db-4014-4799-b989-bb67bf04583a
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
             fieldUid: c0c63f7a-3c61-44b9-b60c-60a02d4526e0 # Cambiar a la nueva versión
             instructions: null
             label: null
@@ -108,7 +120,7 @@ fieldLayouts:
             uid: 8c1bb891-a611-4597-a3a0-142cfa8b6f7c
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             elementCondition: null
             fieldUid: 0ece2177-ba14-462f-9efe-82a142766c2e # Subtítulo

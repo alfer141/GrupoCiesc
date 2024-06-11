@@ -1,0 +1,12 @@
+columnSuffix: mnrxzixe
+contentColumnType: char(7)
+fieldGroup: c44e1865-5d0a-429d-be51-84af5e860f1a # Servicios
+handle: backgroundColor
+instructions: 'Elige el color de fondo del servicio'
+name: 'Background color'
+searchable: false
+settings:
+  defaultColor: '#1a263e'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color
