@@ -76,15 +76,15 @@
                 <h2 class="f5 white fw4 pv0 mv0">Portafolio de servicios</h2>
                 <p class="white f1 mv0 pv0">Somos el aliado que tu empresa necesita</p>
             </div>
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap w-80-ns">
                 {% set services = craft.entries()
                     .section('services')
                     .with(['icon'])
                     .all() %}
                 {% for service in services %}
                     {% set cover = service.icon[0] ?? null %}
-                    <div class="w-25-ns w-100">
-                        <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('{{ cover.url() }}');">
+                    <div class="w-third-ns w-100">
+                        <div x-data="{ showDescription: false, icon: 'fa-sharp fa-thin fa-circle-chevron-down' }" class="w-95 center white home__service_card mb3" style="background-color: #E74B04; background-image:url('{{ cover.url() }}'); background-size:cover;">
                             <div class="white">
                                 <div x-on:mouseover="showDescription = true; icon = 'fa-sharp fa-thin fa-circle-chevron-up'" 
                                     x-on:mouseout="showDescription = false; icon = 'fa-sharp fa-thin fa-circle-chevron-down'"  
