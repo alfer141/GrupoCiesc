@@ -64,8 +64,8 @@
     <section class="pb5-ns pt2 pv3">
         <div class="mwc center ph3">
             <div>
-                <h2 class="f1 tracked-tight lh-solid w-100">{{ entry.aboutServiceTitle }}</h2>
-                <p class="lh-copy">{{entry.aboutServiceDescription }}</p>
+                <h2 class="f1 tracked-tight lh-solid w-100 mb2">{{ entry.aboutServiceTitle }}</h2>
+                <div class="ckEditor">{{entry.aboutServiceDescription }}</div>
             </div>
             {% set matrixTab = entry.aboutserviceTab.all() %}
             {% set firstTab = entry.aboutserviceTab.one() %}

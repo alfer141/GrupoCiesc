@@ -6,14 +6,18 @@ instructions: 'Descripción justo debajo de su título'
 name: 'Descripción: Acerca del Servicio'
 searchable: true
 settings:
-  byteLimit: null
-  charLimit: null
-  code: false
-  columnType: null
-  initialRows: 4
-  multiline: true
-  placeholder: null
-  uiMode: normal
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 99d06683-b4dc-4996-af1e-a55db9b88f75 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\PlainText
+type: craft\ckeditor\Field

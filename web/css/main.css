@@ -378,6 +378,9 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ff5
     color: #ff5722;
     text-decoration: none;
 }
+.ckEditor p{
+    line-height: 1.5;
+}
 @media only screen and (max-width: 600px){
     .serviceMain_imageWrapper{
         width: 100%;
